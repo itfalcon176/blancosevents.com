@@ -48,7 +48,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
             className="text-3xl sm:text-5xl md:text-6xl lg:text-[72px] xl:text-[80px] font-normal font-serif tracking-tight leading-[1.05] text-white mb-4 whitespace-nowrap"
             style={{ fontFamily: "'Playfair Display', 'Cinzel', Georgia, serif" }}
           >
-            BE REMEMBER<span className="text-[#D4AF37]">ED.</span>
+            BE REMEMBERED.
           </motion.h1>
 
           {/* Italic Tagline */}
