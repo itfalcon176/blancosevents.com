@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    background-color: #08080A;
+    color: #FDFBF7;
+    font-family: var(--font-jakarta);
+    overflow-x: hidden;
+  }
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89230 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
