@@ -12,7 +12,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Timeless moments, elegant design and flawless execution for your most precious celebrations.',
       image:
-        'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop',
+        '/blancosevents-image-home/wedding.webp',
       // Transparent Gold Solitaire Ring Emblem Image
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
@@ -35,7 +35,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Birthdays, anniversaries, proposals & intimate gatherings made truly unforgettable.',
       image:
-        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop',
+        '/blancosevents-image-home/private.webp',
       // Transparent Gold Champagne Flutes Emblem Image
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
@@ -60,7 +60,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Polished, impactful, and creative events that elevate your brand.',
       image:
-        'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1000&auto=format&fit=crop',
+        '/blancosevents-image-home/coorporate.webp',
       // Transparent Gold Stage & Crown Emblem Image
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
@@ -83,7 +83,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Curating & managing exceptional events in stunning spaces.',
       image:
-        'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop',
+        '/blancosevents-image-home/hotel.webp',
       // Transparent Gold Food Cloche Dome Emblem Image
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">

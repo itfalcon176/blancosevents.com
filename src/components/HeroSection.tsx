@@ -17,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
         <div
           className="absolute inset-0 bg-cover bg-right sm:bg-center bg-no-repeat transform scale-105"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2400&auto=format&fit=crop')`,
+            backgroundImage: `url('/blancosevents-image-home/banner.webp')`,
           }}
         />
         {/* Deep Black Left Overlay Gradient for Crystal Clear Text */}

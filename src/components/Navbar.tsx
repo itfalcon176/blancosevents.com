@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
@@ -47,8 +47,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-black/95 backdrop-blur-md border-b border-[#D4AF37]/20 py-0.5 shadow-2xl'
-          : 'bg-black/90 border-b border-white/10 py-1'
+          ? 'bg-black/95 backdrop-blur-md border-b border-[#D4AF37]/20 py-1 shadow-2xl'
+          : 'bg-black/90 border-b border-white/10 py-1.5'
       }`}
     >
       <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,25 +117,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
             ))}
           </nav>
 
-          {/* Right Action Items: PLAN AN EVENT + ☰ ▾ Icon Button */}
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={onOpenInquiryModal}
-              className="px-3.5 py-1 text-[10px] font-semibold tracking-[0.18em] text-[#D4AF37] hover:text-black hover:bg-[#D4AF37] uppercase border border-[#D4AF37]/80 rounded-sm transition-all duration-300 shadow-md bg-black/40"
+          {/* Right Action Items: WHATSAPP Pill + ☰ Menu */}
+          <div className="flex items-center space-x-2.5">
+            {/* WHATSAPP Pill Button matching screenshot */}
+            <a
+              href="https://wa.me/971501234567"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center space-x-1.5 px-3 py-1.5 border border-[#C5A059]/80 rounded-full text-white bg-black/80 hover:border-[#D4AF37] hover:bg-[#C5A059]/10 transition-all duration-300 shadow-md group"
             >
-              PLAN AN EVENT
-            </button>
+              <MessageCircle className="w-3.5 h-3.5 text-[#C5A059] group-hover:text-[#D4AF37] transition-colors" />
+              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-white">
+                WHATSAPP
+              </span>
+            </a>
 
-            {/* Menu Toggle Dropdown Button (☰ ▾) */}
-            <div className="relative">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="flex items-center space-x-1 px-2 py-1 border border-white/20 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] rounded-sm transition-colors bg-black/50"
-              >
-                <Menu className="w-3.5 h-3.5" />
-                <ChevronDown className="w-2.5 h-2.5 text-[#D4AF37]" />
-              </button>
-            </div>
+            {/* Menu Toggle Dropdown Button (☰) */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle Menu"
+              className="p-1.5 text-white hover:text-[#D4AF37] transition-colors"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </div>
@@ -169,7 +173,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
                     setMobileMenuOpen(false);
                     if (onOpenInquiryModal) onOpenInquiryModal();
                   }}
-                  className="w-full text-center py-2 text-xs font-semibold text-black bg-[#D4AF37] rounded-sm tracking-widest uppercase hover:bg-[#F3E5AB] transition-colors"
+                  className="w-full text-center py-2.5 text-xs font-bold text-black bg-[#D4AF37] rounded-sm tracking-widest uppercase hover:bg-[#F3E5AB] transition-colors"
                 >
                   PLAN AN EVENT
                 </button>
