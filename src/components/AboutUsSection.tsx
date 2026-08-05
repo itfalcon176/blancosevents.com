@@ -109,24 +109,22 @@ export const AboutUsSection: React.FC = () => {
       <div className="w-full pt-0 pb-0">
         {/* 3-Column Main Content Layout */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-stretch w-full">
-          {/* Column 1: Founder Image (35% Width - Full Height Cover) */}
+          {/* Column 1: Founder Image (35% Width - Full Height Background Image) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0 self-stretch"
+            className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0 self-stretch min-h-[500px] lg:min-h-[650px]"
           >
-
             <Image
               src="/about-us-image/img3.webp"
               alt="Blanca - Founder & Creative Director of Blanca's Events"
               fill
-              className="object-contain object-left transform transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-left transform transition-transform duration-700 hover:scale-105"
               sizes="(max-width: 768px) 100vw, 35vw"
               priority
             />
-
           </motion.div>
 
           {/* Column 2: Header + Founder Letter & Story (Width Reduced to 30%) */}
