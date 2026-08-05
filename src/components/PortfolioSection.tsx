@@ -7,49 +7,64 @@ import { motion, AnimatePresence } from 'framer-motion';
 export const PortfolioSection: React.FC = () => {
   const allPortfolioItems = [
     {
-      title: 'Grand Floral Wedding Aisle',
+      title: 'Luxury Weddings',
       category: 'Weddings',
-      url: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
+      url: '/portfolio-images/Luxury Weddings.webp',
     },
     {
-      title: 'Candlelit Banquet Setup',
-      category: 'Private Parties',
-      url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop',
+      title: 'Elegant Table Settings',
+      category: 'Weddings & Celebrations',
+      url: '/portfolio-images/Elegant Table Settings.webp',
     },
     {
-      title: 'Crystal Chandelier Gala',
+      title: 'Corporate Events',
       category: 'Corporate Events',
-      url: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=800&auto=format&fit=crop',
+      url: '/portfolio-images/Corporate Events.webp',
     },
     {
-      title: 'Luxury Floral Dining',
-      category: 'Private Celebrations',
-      url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800&auto=format&fit=crop',
+      title: 'Hotels & Venue Styling',
+      category: 'Venue Styling',
+      url: '/portfolio-images/hotel.webp',
     },
     {
-      title: 'Outdoor Resort Gala',
-      category: 'Grand Celebrations',
-      url: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Royal Engagement Soirée',
-      category: 'Engagements',
-      url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'VIP Lounge Experience',
-      category: 'Hospitality',
-      url: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Opulent Stage Lighting',
-      category: 'Gala Events',
-      url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Luxury Dining Terrace',
+      title: 'Birthday Celebrations',
       category: 'Private Parties',
-      url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop',
+      url: '/portfolio-images/birthday.webp',
+    },
+    {
+      title: 'Engagements & Proposals',
+      category: 'Engagements',
+      url: '/portfolio-images/proposal.webp',
+    },
+    {
+      title: 'Brand Activations',
+      category: 'Corporate Events',
+      url: '/portfolio-images/brand activation.webp',
+    },
+    {
+      title: 'Floral & Design Creations',
+      category: 'Weddings & Celebrations',
+      url: '/portfolio-images/floral.webp',
+    },
+    {
+      title: 'Gala Dinners',
+      category: 'Corporate Events',
+      url: '/portfolio-images/gala dinner.webp',
+    },
+    {
+      title: 'Luxury Private Dining',
+      category: 'Private Celebrations',
+      url: '/portfolio-images/private dinner.webp',
+    },
+    {
+      title: 'Royal Reception',
+      category: 'Weddings',
+      url: '/portfolio-images/reception.webp',
+    },
+    {
+      title: 'Exhibition & Launch Events',
+      category: 'Corporate Events',
+      url: '/portfolio-images/launch.webp',
     },
   ];
 
@@ -197,10 +212,12 @@ export const PortfolioSection: React.FC = () => {
               </p>
               <div className="h-px w-8 sm:w-24 bg-[#C5A059]/40" />
             </div>
-            <div className="flex items-center justify-center sm:justify-start gap-0 mb-3">
-              <div className="h-px w-6 sm:w-16 bg-[#C5A059]/30" />
-              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rotate-45 border border-[#C5A059] bg-[#C5A059]/20 mx-2" />
-              <div className="h-px w-6 sm:w-16 bg-[#C5A059]/30" />
+            <div className="flex justify-center sm:justify-start w-full sm:pl-[120px] mb-3">
+              <div className="flex items-center gap-0">
+                <div className="h-px w-6 sm:w-16 bg-[#C5A059]/30" />
+                <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rotate-45 border border-[#C5A059] bg-[#C5A059]/20 mx-2" />
+                <div className="h-px w-6 sm:w-16 bg-[#C5A059]/30" />
+              </div>
             </div>
             <h2
               className="text-3xl sm:text-4xl md:text-5xl font-serif text-black tracking-tight"
