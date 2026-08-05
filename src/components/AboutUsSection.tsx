@@ -140,29 +140,32 @@ export const AboutUsSection: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="w-full lg:w-[30%] xl:w-[30%] space-y-3 text-left px-4 sm:px-6 pt-4 lg:pt-8 flex-shrink-0"
           >
-            {/* Top Decorative Header inside Center Column - CENTER ALIGNED MATCHING SCREENSHOT */}
+            {/* Top Decorative Header inside Center Column - MATCHING PHOTO 1 EXACTLY */}
             <div className="text-center mb-6">
-              <div className="flex items-center justify-center gap-3 mb-1.5">
-                <span className="h-[1px] w-12 bg-[#B88E3E]/60"></span>
-                <span className="text-[11px] sm:text-xs font-medium tracking-[0.32em] uppercase text-[#B88E3E]">
+              <div className="flex items-center justify-center gap-3.5 mb-2">
+                <span className="h-[1px] w-16 sm:w-20 bg-[#B88E3E]/70"></span>
+                <span className="text-[11px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-[#B88E3E]">
                   ABOUT US
                 </span>
-                <span className="h-[1px] w-12 bg-[#B88E3E]/60"></span>
+                <span className="h-[1px] w-16 sm:w-20 bg-[#B88E3E]/70"></span>
               </div>
 
-              {/* Flourish Ornament under ABOUT US */}
-              <div className="flex justify-center mb-2.5">
-                <svg viewBox="0 0 40 12" fill="none" stroke="#B88E3E" className="w-8 h-3 opacity-80">
-                  <path d="M4 6c4-4 8 4 16 0s12 4 16 0" strokeWidth="1.2" strokeLinecap="round" />
-                  <circle cx="20" cy="6" r="1.5" fill="#B88E3E" />
+              {/* Flourish Ornament under ABOUT US - Matching Photo 1 */}
+              <div className="flex justify-center mb-3">
+                <svg viewBox="0 0 100 12" fill="none" className="w-24 h-3">
+                  <line x1="0" y1="6" x2="42" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
+                  <circle cx="43.5" cy="6" r="1.2" fill="#B88E3E" />
+                  <path d="M50 2L54 6L50 10L46 6Z" fill="#B88E3E" />
+                  <circle cx="56.5" cy="6" r="1.2" fill="#B88E3E" />
+                  <line x1="58" y1="6" x2="100" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
                 </svg>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] xl:text-[45px] font-serif text-[#1C1C1C] tracking-tight font-normal mb-2 leading-tight text-center whitespace-nowrap">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] xl:text-[45px] font-serif text-[#1C1C1C] tracking-tight font-normal mb-3.5 leading-tight text-center whitespace-nowrap">
                 Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
               </h2>
 
-              <p className="text-[11px] sm:text-xs font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center">
+              <p className="text-[11px] sm:text-xs font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center mt-3.5 sm:mt-4">
                 THE HEART BEHIND BLANCA'S EVENTS
               </p>
             </div>
@@ -172,21 +175,26 @@ export const AboutUsSection: React.FC = () => {
               Hi, I'm Blanca
             </h3>
 
-            <div className="space-y-4 max-w-[471px]">
-              <p className="text-xs sm:text-sm font-medium text-black text-left">
+            <div className="space-y-5 max-w-[471px]">
+              <p className="text-xs sm:text-sm font-semibold text-black text-left">
                 The founder and creative director of Blanca's Events.
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black leading-relaxed text-left">
-                With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
+                <span className="block mb-2.5">With a deep love for beautiful details and a natural talent for bringing visions</span>
+                <span className="block mb-2.5">to life, I established Blanca's Events to offer a truly bespoke experience for</span>
+                <span className="block">those who value elegance, originality and exceptional service.</span>
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black leading-relaxed text-left">
-                Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
+                <span className="block mb-2.5">Every event we create is more than just a celebration – it's a reflection of</span>
+                <span className="block">your story, your style and the moments that matter most.</span>
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black leading-relaxed text-left">
-                From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
+                <span className="block mb-2.5">From intimate gatherings to grand productions, my team and I are</span>
+                <span className="block mb-2.5">passionate about designing unforgettable events that leave a lasting</span>
+                <span className="block">impression on you and your guests.</span>
               </p>
             </div>
 
