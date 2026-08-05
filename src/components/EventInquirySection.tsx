@@ -47,7 +47,7 @@ export const EventInquirySection: React.FC = () => {
       {/* Crystal Clear Full-Height Background Image on Left Edge */}
       <div className="absolute inset-y-0 left-0 w-full md:w-[42%] lg:w-[35%] z-0">
         <img
-          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop"
+          src="/blancosevents-image-home/home img2.webp"
           alt="Luxury Event Planning Director"
           className="w-full h-full object-cover object-top filter brightness-110 contrast-110"
         />
@@ -59,7 +59,7 @@ export const EventInquirySection: React.FC = () => {
       {/* Full Width Container */}
       <div className="relative z-10 max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
+
           {/* Empty Left Spacer for background portrait image */}
           <div className="hidden lg:block lg:col-span-3 h-full min-h-[450px]" />
 
@@ -168,7 +168,7 @@ export const EventInquirySection: React.FC = () => {
                   onChange={(e) => setFormData({ ...formData, details: e.target.value })}
                   className="w-full bg-transparent text-xs text-white placeholder-neutral-400 focus:outline-none resize-none"
                 />
-                
+
                 <div className="flex justify-end pt-2">
                   <button
                     type="submit"
