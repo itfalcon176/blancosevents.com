@@ -172,21 +172,23 @@ export const AboutUsSection: React.FC = () => {
               Hi, I'm Blanca
             </h3>
 
-            <p className="text-xs sm:text-sm font-semibold text-black text-left">
-              The founder and creative director of Blanca's Events.
-            </p>
+            <div className="space-y-4 max-w-[471px]">
+              <p className="text-xs sm:text-sm font-bold text-black text-left">
+                The founder and creative director of Blanca's Events.
+              </p>
 
-            <p className="text-xs sm:text-sm text-black leading-[1.9] font-normal text-left">
-              With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
-            </p>
+              <p className="text-xs sm:text-sm text-[#333333] leading-relaxed font-normal text-left">
+                With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
+              </p>
 
-            <p className="text-xs sm:text-sm text-black leading-[1.9] font-normal text-left">
-              Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
-            </p>
+              <p className="text-xs sm:text-sm text-[#333333] leading-relaxed font-normal text-left">
+                Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
+              </p>
 
-            <p className="text-xs sm:text-sm text-black leading-[1.9] font-normal text-left">
-              From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
-            </p>
+              <p className="text-xs sm:text-sm text-[#333333] leading-relaxed font-normal text-left">
+                From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
+              </p>
+            </div>
 
             <div className="pt-2 flex justify-start">
               <span className="font-script text-3xl sm:text-4xl text-[#B88E3E] flex items-center justify-start gap-1.5 font-normal">
