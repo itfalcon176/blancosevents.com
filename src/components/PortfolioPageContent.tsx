@@ -28,62 +28,62 @@ const portfolioItems: PortfolioItem[] = [
   {
     title: 'Luxury Weddings',
     category: ['ALL EVENTS', 'WEDDINGS'],
-    url: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/Luxury Weddings.webp',
   },
   {
     title: 'Elegant Table Settings',
     category: ['ALL EVENTS', 'WEDDINGS', 'PRIVATE CELEBRATIONS'],
-    url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/Elegant Table Settings.webp',
   },
   {
     title: 'Corporate Events',
     category: ['ALL EVENTS', 'CORPORATE EVENTS'],
-    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/Corporate Events.webp',
   },
   {
     title: 'Hotels & Venue Styling',
     category: ['ALL EVENTS', 'HOTELS & RESTAURANTS'],
-    url: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/hotel.webp',
   },
   {
     title: 'Birthday Celebrations',
     category: ['ALL EVENTS', 'PRIVATE CELEBRATIONS'],
-    url: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/birthday.webp',
   },
   {
     title: 'Engagements & Proposals',
     category: ['ALL EVENTS', 'WEDDINGS'],
-    url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/proposal.webp',
   },
   {
     title: 'Brand Activations',
     category: ['ALL EVENTS', 'BRAND ACTIVATIONS', 'CORPORATE EVENTS'],
-    url: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/brand activation.webp',
   },
   {
     title: 'Floral & Design Creations',
     category: ['ALL EVENTS', 'WEDDINGS', 'PRIVATE CELEBRATIONS', 'HOTELS & RESTAURANTS'],
-    url: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/floral.webp',
   },
   {
     title: 'Gala Dinners',
     category: ['ALL EVENTS', 'CORPORATE EVENTS'],
-    url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/gala dinner.webp',
   },
   {
     title: 'Luxury Private Dining',
     category: ['ALL EVENTS', 'PRIVATE CELEBRATIONS', 'HOTELS & RESTAURANTS'],
-    url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/private dinner.webp',
   },
   {
     title: 'Royal Reception',
     category: ['ALL EVENTS', 'WEDDINGS'],
-    url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/reception.webp',
   },
   {
     title: 'Exhibition & Launch Events',
     category: ['ALL EVENTS', 'BRAND ACTIVATIONS', 'CORPORATE EVENTS'],
-    url: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?q=80&w=800&auto=format&fit=crop',
+    url: '/portfolio-images/launch.webp',
   },
 ];
 
@@ -168,11 +168,10 @@ export const PortfolioPageContent: React.FC = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`whitespace-nowrap px-4 sm:px-5 py-2 sm:py-2.5 text-[10px] sm:text-[11px] font-semibold tracking-[0.16em] uppercase rounded-sm border transition-all duration-300 cursor-pointer flex-shrink-0 ${
-                    activeCategory === cat
-                      ? 'bg-neutral-900 text-white border-neutral-900 shadow-md'
-                      : 'bg-transparent text-neutral-600 border-neutral-300 hover:border-[#C5A059] hover:text-[#C5A059]'
-                  }`}
+                  className={`whitespace-nowrap px-4 sm:px-5 py-2 sm:py-2.5 text-[10px] sm:text-[11px] font-semibold tracking-[0.16em] uppercase rounded-sm border transition-all duration-300 cursor-pointer flex-shrink-0 ${activeCategory === cat
+                    ? 'bg-neutral-900 text-white border-neutral-900 shadow-md'
+                    : 'bg-transparent text-neutral-600 border-neutral-300 hover:border-[#C5A059] hover:text-[#C5A059]'
+                    }`}
                 >
                   {cat}
                 </button>
