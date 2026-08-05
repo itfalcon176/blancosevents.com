@@ -37,7 +37,7 @@ const HeartIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 );
 
 const ClipboardIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
     <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
     <line x1="9" y1="12" x2="15" y2="12" />
@@ -47,7 +47,7 @@ const ClipboardIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 );
 
 const CalendarIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
     <line x1="16" y1="2" x2="16" y2="6" />
     <line x1="8" y1="2" x2="8" y2="6" />
@@ -61,7 +61,7 @@ const CalendarIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 );
 
 const LightbulbIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M9 18h6" />
     <path d="M10 22h4" />
     <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1.55.59 2.97 1.5 4 .76.76 1.23 1.52 1.41 2.5" />
@@ -69,7 +69,7 @@ const LightbulbIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 );
 
 const HandshakeIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-2.6-2.6a1 1 0 0 0-1.4 0l-2.4 2.4" />
     <path d="m13 14 1.7-1.7a1 1 0 0 0 0-1.4L12 8.3a1 1 0 0 0-1.4 0l-4.3 4.3a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0L12 15" />
     <path d="M18 11.5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4.5" />
@@ -77,26 +77,26 @@ const HandshakeIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 );
 
 const StarIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
   </svg>
 );
 
 const LaurelWreathIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M6 15A9 9 0 0 1 3 8a9 9 0 0 1 5-4.5" />
-    <path d="M18 15a9 9 0 0 0 3-7 9 9 0 0 0-5-4.5" />
-    <path d="M12 22a10 10 0 0 1-6-3" />
-    <path d="M12 22a10 10 0 0 0 6-3" />
-    <circle cx="12" cy="12" r="3" />
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="8.5" r="5" />
+    <circle cx="12" cy="8.5" r="2" />
+    <path d="M8.5 13L7 21L12 18.5L17 21L15.5 13" />
   </svg>
 );
 
 const GlobeIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="12" r="10" />
-    <line x1="2" y1="12" x2="22" y2="12" />
-    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3.6 9h16.8" />
+    <path d="M3.6 15h16.8" />
+    <path d="M11.5 3a17 17 0 0 0 0 18" />
+    <path d="M12.5 3a17 17 0 0 1 0 18" />
   </svg>
 );
 
@@ -138,21 +138,21 @@ export const AboutUsSection: React.FC = () => {
             {/* Top Decorative Header inside Center Column - MATCHING PHOTO 1 EXACTLY */}
             <div className="text-center mb-6">
               <div className="flex items-center justify-center gap-3.5 mb-2">
-                <span className="h-[1px] w-16 sm:w-20 bg-[#B88E3E]/70"></span>
+                <span className="h-[1px] w-20 sm:w-24 bg-[#B88E3E]/70"></span>
                 <span className="text-[11px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-[#B88E3E]">
                   ABOUT US
                 </span>
-                <span className="h-[1px] w-16 sm:w-20 bg-[#B88E3E]/70"></span>
+                <span className="h-[1px] w-20 sm:w-24 bg-[#B88E3E]/70"></span>
               </div>
 
-              {/* Flourish Ornament under ABOUT US - Matching Photo 1 */}
+              {/* Flourish Ornament under ABOUT US - Matching Width of Top Row */}
               <div className="flex justify-center mb-3">
-                <svg viewBox="0 0 100 12" fill="none" className="w-24 h-3">
-                  <line x1="0" y1="6" x2="42" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
-                  <circle cx="43.5" cy="6" r="1.2" fill="#B88E3E" />
-                  <path d="M50 2L54 6L50 10L46 6Z" fill="#B88E3E" />
-                  <circle cx="56.5" cy="6" r="1.2" fill="#B88E3E" />
-                  <line x1="58" y1="6" x2="100" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
+                <svg viewBox="0 0 200 12" fill="none" className="w-56 sm:w-64 h-3">
+                  <line x1="0" y1="6" x2="92" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
+                  <circle cx="93.5" cy="6" r="1.2" fill="#B88E3E" />
+                  <path d="M100 2L104 6L100 10L96 6Z" fill="#B88E3E" />
+                  <circle cx="106.5" cy="6" r="1.2" fill="#B88E3E" />
+                  <line x1="108" y1="6" x2="200" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
                 </svg>
               </div>
 
@@ -373,13 +373,13 @@ export const AboutUsSection: React.FC = () => {
           style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
         />
 
-        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Left Column: Quote (5 cols) */}
-          <div className="lg:col-span-5 flex items-start space-x-4">
-            <span className="font-serif text-6xl md:text-7xl text-[#C5A059] leading-none select-none -mt-2">
+        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          {/* Left Column: Quote (4 cols) */}
+          <div className="lg:col-span-4 flex items-start space-x-3.5">
+            <span className="font-serif text-5xl md:text-6xl text-[#C5A059] leading-none select-none -mt-1">
               “
             </span>
-            <p className="text-lg md:text-2xl font-serif text-neutral-100 font-light leading-relaxed">
+            <p className="text-base md:text-xl font-serif text-neutral-100 font-light leading-relaxed">
               My mission is to turn your vision into an experience that feels{' '}
               <span className="italic text-[#D4AF37] font-serif">effortless</span> for you and{' '}
               <span className="italic text-[#D4AF37] font-serif">unforgettable</span> for your guests.
@@ -391,56 +391,56 @@ export const AboutUsSection: React.FC = () => {
             <div className="w-[1px] bg-gradient-to-b from-transparent via-[#C5A059]/40 to-transparent" />
           </div>
 
-          {/* Right Column: 4 Stat Boxes (6 cols) */}
-          <div className="lg:col-span-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          {/* Right Column: 4 Stat Boxes (7 cols) */}
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-0 text-center items-stretch divide-y sm:divide-y-0 sm:divide-x divide-[#C5A059]/25">
             {/* Stat 1 */}
-            <div className="space-y-1 sm:border-r border-white/10 sm:pr-4">
-              <div className="flex justify-center text-[#C5A059] mb-2">
-                <LaurelWreathIcon className="w-6 h-6" />
+            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+              <div className="flex justify-center text-[#C5A059] mb-1">
+                <LaurelWreathIcon className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <div className="text-2xl md:text-3xl font-serif text-white font-normal tracking-wide">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
                 250+
               </div>
-              <div className="text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase">
+              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
                 EVENTS DELIVERED
               </div>
             </div>
 
             {/* Stat 2 */}
-            <div className="space-y-1 sm:border-r border-white/10 sm:px-4">
-              <div className="flex justify-center text-[#C5A059] mb-2">
-                <UsersIcon className="w-6 h-6" />
+            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+              <div className="flex justify-center text-[#C5A059] mb-1">
+                <UsersIcon className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <div className="text-2xl md:text-3xl font-serif text-white font-normal tracking-wide">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
                 20,000+
               </div>
-              <div className="text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase">
+              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
                 HAPPY GUESTS
               </div>
             </div>
 
             {/* Stat 3 */}
-            <div className="space-y-1 sm:border-r border-white/10 sm:px-4">
-              <div className="flex justify-center text-[#C5A059] mb-2">
-                <GlobeIcon className="w-6 h-6" />
+            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+              <div className="flex justify-center text-[#C5A059] mb-1">
+                <GlobeIcon className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <div className="text-xl md:text-2xl font-serif text-white font-normal tracking-wide">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
                 UAE & BEYOND
               </div>
-              <div className="text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase">
+              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
                 GLOBAL REACH
               </div>
             </div>
 
             {/* Stat 4 */}
-            <div className="space-y-1 sm:pl-4">
-              <div className="flex justify-center text-[#C5A059] mb-2">
-                <DiamondIcon className="w-6 h-6" />
+            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+              <div className="flex justify-center text-[#C5A059] mb-1">
+                <DiamondIcon className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <div className="text-2xl md:text-3xl font-serif text-white font-normal tracking-wide">
+              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
                 10+ YEARS
               </div>
-              <div className="text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase">
+              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
                 OF EXPERIENCE
               </div>
             </div>
