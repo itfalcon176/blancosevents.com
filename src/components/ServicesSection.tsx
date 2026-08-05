@@ -4,6 +4,84 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// Custom Handcrafted Luxury SVG Outline Icons matching reference design exactly
+const LuxuryWeddingRingsIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Small Crown above rings */}
+    <path d="M15 11.5L17.5 14.5L20 11.5L22.5 14.5L25 11.5L24 16H16L15 11.5Z" strokeWidth="1.3" />
+    <circle cx="15" cy="10.5" r="0.8" fill="#C8A46A" />
+    <circle cx="20" cy="10.5" r="0.8" fill="#C8A46A" />
+    <circle cx="25" cy="10.5" r="0.8" fill="#C8A46A" />
+    {/* Two Interlocking Wedding Rings */}
+    <circle cx="15.5" cy="24.5" r="7.5" strokeWidth="1.5" />
+    <circle cx="24.5" cy="24.5" r="7.5" strokeWidth="1.5" />
+    {/* Gem Facets */}
+    <path d="M15.5 17L14.5 15H16.5L15.5 17Z" fill="#C8A46A" />
+    <path d="M24.5 17L23.5 15H25.5L24.5 17Z" fill="#C8A46A" />
+  </svg>
+);
+
+const LuxuryCakeIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Crown Topper */}
+    <path d="M17.5 10L18.8 12L20 9.5L21.2 12L22.5 10L22 13.5H18L17.5 10Z" strokeWidth="1.2" />
+    <circle cx="20" cy="8.5" r="0.7" fill="#C8A46A" />
+    {/* Top Tier */}
+    <path d="M15 13.5H25V18.5H15V13.5Z" strokeWidth="1.5" />
+    {/* Middle Tier */}
+    <path d="M12 18.5H28V24.5H12V18.5Z" strokeWidth="1.5" />
+    {/* Bottom Tier */}
+    <path d="M9 24.5H31V30.5H9V24.5Z" strokeWidth="1.5" />
+    {/* Cake Stand / Base Plate */}
+    <path d="M7 30.5H33" strokeWidth="1.8" />
+    {/* Scalloped Icing Detail Lines */}
+    <path d="M15 15.5C17.5 17 17.5 17 20 15.5C22.5 17 22.5 17 25 15.5" strokeWidth="1.1" />
+    <path d="M12 20.5C16 22.5 16 22.5 20 20.5C24 22.5 24 22.5 28 20.5" strokeWidth="1.1" />
+    <path d="M9 26.5C13.5 28.5 15.5 28.5 20 26.5C24.5 28.5 26.5 28.5 31 26.5" strokeWidth="1.1" />
+  </svg>
+);
+
+const LuxuryBuildingIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Spire */}
+    <path d="M20 6.5V11" strokeWidth="1.4" />
+    {/* Main Tower Body */}
+    <path d="M14 11H26V32H14V11Z" strokeWidth="1.5" />
+    {/* Architectural Crown Cap */}
+    <path d="M12 11H28" strokeWidth="1.4" />
+    {/* Window Grid */}
+    <path d="M17 15H19M21 15H23" strokeWidth="1.4" />
+    <path d="M17 19H19M21 19H23" strokeWidth="1.4" />
+    <path d="M17 23H19M21 23H23" strokeWidth="1.4" />
+    <path d="M17 27H19M21 27H23" strokeWidth="1.4" />
+    {/* Portal Doorway */}
+    <path d="M18 32V29H22V32" strokeWidth="1.4" />
+    {/* Side Buildings */}
+    <path d="M9 18.5H14V32H9V18.5Z" strokeWidth="1.3" />
+    <path d="M26 18.5H31V32H26V18.5Z" strokeWidth="1.3" />
+    {/* Side Windows */}
+    <path d="M11 22H12M11 26H12" strokeWidth="1.2" />
+    <path d="M28 22H29M28 26H29" strokeWidth="1.2" />
+    {/* Base Foundation */}
+    <path d="M6 32H34" strokeWidth="1.8" />
+  </svg>
+);
+
+const LuxuryClocheIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Top Knob Handle */}
+    <circle cx="20" cy="10.5" r="2.2" strokeWidth="1.4" />
+    <path d="M20 12.7V14.5" strokeWidth="1.4" />
+    {/* Dome Body */}
+    <path d="M9 27C9 18 13.8 14.5 20 14.5C26.2 15 31 18 31 27H9Z" strokeWidth="1.5" />
+    {/* Specular Highlight Arc */}
+    <path d="M12.5 24C14.5 19.5 17 17.5 20 17.5" strokeWidth="1.2" strokeOpacity="0.85" />
+    {/* Base Tray Line */}
+    <path d="M6 29H34" strokeWidth="2.2" />
+    <path d="M8 29C8 31 10 32.2 12 32.2H28C30 32.2 32 31 32 29" strokeWidth="1.3" />
+  </svg>
+);
+
 export const ServicesSection: React.FC = () => {
   const services = [
     {
@@ -12,20 +90,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Timeless moments, elegant design and flawless execution for your most precious celebrations.',
       image: '/blancosevents-image-home/wedding.webp',
-      iconElement: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
-          <defs>
-            <linearGradient id="goldRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FAF0D7" />
-              <stop offset="50%" stopColor="#D4AF37" />
-              <stop offset="100%" stopColor="#9E7D3B" />
-            </linearGradient>
-          </defs>
-          <circle cx="20" cy="24" r="10" stroke="url(#goldRingGrad)" strokeWidth="2.2" fill="none" />
-          <path d="M15 14L20 8L25 14H15Z" fill="url(#goldRingGrad)" />
-          <path d="M17 14L20 9.5L23 14" stroke="#000" strokeWidth="0.8" fill="none" />
-        </svg>
-      ),
+      iconElement: <LuxuryWeddingRingsIcon className="w-7 h-7" />,
     },
     {
       id: 'private',
@@ -33,22 +98,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Birthdays, anniversaries, proposals & intimate gatherings made truly unforgettable.',
       image: '/blancosevents-image-home/private.webp',
-      iconElement: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
-          <defs>
-            <linearGradient id="goldGlassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FAF0D7" />
-              <stop offset="50%" stopColor="#D4AF37" />
-              <stop offset="100%" stopColor="#9E7D3B" />
-            </linearGradient>
-          </defs>
-          <path d="M12 8L15 20H19L22 8H12Z" stroke="url(#goldGlassGrad)" strokeWidth="2.2" fill="none" />
-          <path d="M17 20V30M13 30H21" stroke="url(#goldGlassGrad)" strokeWidth="2.2" />
-          <path d="M22 10L27 20H24" stroke="url(#goldGlassGrad)" strokeWidth="2" opacity="0.8" fill="none" />
-          <circle cx="14" cy="6" r="1.2" fill="url(#goldGlassGrad)" />
-          <circle cx="23" cy="6.5" r="1.2" fill="url(#goldGlassGrad)" />
-        </svg>
-      ),
+      iconElement: <LuxuryCakeIcon className="w-7 h-7" />,
     },
     {
       id: 'corporate',
@@ -56,20 +106,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Polished, impactful, and creative events that elevate your brand.',
       image: '/blancosevents-image-home/coorporate.webp',
-      iconElement: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
-          <defs>
-            <linearGradient id="goldCrownGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FAF0D7" />
-              <stop offset="50%" stopColor="#D4AF37" />
-              <stop offset="100%" stopColor="#9E7D3B" />
-            </linearGradient>
-          </defs>
-          <path d="M10 28H30M13 28V18L20 12L27 18V28" stroke="url(#goldCrownGrad)" strokeWidth="2.2" fill="none" />
-          <circle cx="20" cy="20" r="3.2" fill="url(#goldCrownGrad)" />
-          <path d="M9 28L20 21L31 28" stroke="url(#goldCrownGrad)" strokeWidth="1.8" />
-        </svg>
-      ),
+      iconElement: <LuxuryBuildingIcon className="w-7 h-7" />,
     },
     {
       id: 'venues',
@@ -77,20 +114,7 @@ export const ServicesSection: React.FC = () => {
       description:
         'Curating & managing exceptional events in stunning spaces.',
       image: '/blancosevents-image-home/hotel.webp',
-      iconElement: (
-        <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
-          <defs>
-            <linearGradient id="goldDomeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FAF0D7" />
-              <stop offset="50%" stopColor="#D4AF37" />
-              <stop offset="100%" stopColor="#9E7D3B" />
-            </linearGradient>
-          </defs>
-          <circle cx="20" cy="10" r="2" fill="url(#goldDomeGrad)" />
-          <path d="M9 25C9 17 14 12 20 12C26 12 31 17 31 25H9Z" stroke="url(#goldDomeGrad)" strokeWidth="2.2" fill="none" />
-          <path d="M6 28H34" stroke="url(#goldDomeGrad)" strokeWidth="2.5" strokeLinecap="round" />
-        </svg>
-      ),
+      iconElement: <LuxuryClocheIcon className="w-7 h-7" />,
     },
   ];
 
@@ -129,7 +153,7 @@ export const ServicesSection: React.FC = () => {
               </div>
 
               {/* Circular Gold Badge Centered & Unclipped */}
-              <div className="absolute top-[198px] left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black border-2 border-[#D4AF37] flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.9)] z-30 group-hover:scale-110 transition-transform duration-300">
+              <div className="absolute top-[198px] left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-black border-[1.5px] border-[#C8A46A] flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.9)] z-30 group-hover:scale-110 transition-transform duration-300">
                 {service.iconElement}
               </div>
 

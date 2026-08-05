@@ -17,51 +17,81 @@ import {
   ArrowRight,
 } from 'lucide-react';
 
-// Custom SVG Icons for Card Badges
-const RingIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="9" cy="14" r="5" />
-    <circle cx="15" cy="14" r="5" />
-    <path d="M12 9L12 4" />
-    <path d="M10 5L12 3L14 5" />
+// Custom Handcrafted Luxury SVG Outline Icons matching reference design exactly
+const LuxuryWeddingRingsIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Small Crown above rings */}
+    <path d="M15 11.5L17.5 14.5L20 11.5L22.5 14.5L25 11.5L24 16H16L15 11.5Z" strokeWidth="1.3" />
+    <circle cx="15" cy="10.5" r="0.8" fill="#C8A46A" />
+    <circle cx="20" cy="10.5" r="0.8" fill="#C8A46A" />
+    <circle cx="25" cy="10.5" r="0.8" fill="#C8A46A" />
+    {/* Two Interlocking Wedding Rings */}
+    <circle cx="15.5" cy="24.5" r="7.5" strokeWidth="1.5" />
+    <circle cx="24.5" cy="24.5" r="7.5" strokeWidth="1.5" />
+    {/* Gem Facets */}
+    <path d="M15.5 17L14.5 15H16.5L15.5 17Z" fill="#C8A46A" />
+    <path d="M24.5 17L23.5 15H25.5L24.5 17Z" fill="#C8A46A" />
   </svg>
 );
 
-const CakeIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M20 21V19C20 17.9 19.1 17 18 17H6C4.9 17 4 17.9 4 19V21" />
-    <path d="M4 17V12C4 10.9 4.9 10 6 10H18C19.1 10 20 10.9 20 12V17" />
-    <path d="M7 10V7C7 5.9 7.9 5 9 5H15C16.1 5 17 5.9 17 7V10" />
-    <circle cx="12" cy="3" r="1" fill="currentColor" />
+const LuxuryCakeIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Crown Topper */}
+    <path d="M17.5 10L18.8 12L20 9.5L21.2 12L22.5 10L22 13.5H18L17.5 10Z" strokeWidth="1.2" />
+    <circle cx="20" cy="8.5" r="0.7" fill="#C8A46A" />
+    {/* Top Tier */}
+    <path d="M15 13.5H25V18.5H15V13.5Z" strokeWidth="1.5" />
+    {/* Middle Tier */}
+    <path d="M12 18.5H28V24.5H12V18.5Z" strokeWidth="1.5" />
+    {/* Bottom Tier */}
+    <path d="M9 24.5H31V30.5H9V24.5Z" strokeWidth="1.5" />
+    {/* Cake Stand / Base Plate */}
+    <path d="M7 30.5H33" strokeWidth="1.8" />
+    {/* Scalloped Icing Detail Lines */}
+    <path d="M15 15.5C17.5 17 17.5 17 20 15.5C22.5 17 22.5 17 25 15.5" strokeWidth="1.1" />
+    <path d="M12 20.5C16 22.5 16 22.5 20 20.5C24 22.5 24 22.5 28 20.5" strokeWidth="1.1" />
+    <path d="M9 26.5C13.5 28.5 15.5 28.5 20 26.5C24.5 28.5 26.5 28.5 31 26.5" strokeWidth="1.1" />
   </svg>
 );
 
-const BuildingIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M6 22V4C6 2.9 6.9 2 8 2H16C17.1 2 18 2.9 18 4V22" />
-    <path d="M6 12H18" />
-    <path d="M6 7H18" />
-    <path d="M6 17H18" />
-    <path d="M2 22H22" />
+const LuxuryBuildingIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Spire */}
+    <path d="M20 6.5V11" strokeWidth="1.4" />
+    {/* Main Tower Body */}
+    <path d="M14 11H26V32H14V11Z" strokeWidth="1.5" />
+    {/* Architectural Crown Cap */}
+    <path d="M12 11H28" strokeWidth="1.4" />
+    {/* Window Grid */}
+    <path d="M17 15H19M21 15H23" strokeWidth="1.4" />
+    <path d="M17 19H19M21 19H23" strokeWidth="1.4" />
+    <path d="M17 23H19M21 23H23" strokeWidth="1.4" />
+    <path d="M17 27H19M21 27H23" strokeWidth="1.4" />
+    {/* Portal Doorway */}
+    <path d="M18 32V29H22V32" strokeWidth="1.4" />
+    {/* Side Buildings */}
+    <path d="M9 18.5H14V32H9V18.5Z" strokeWidth="1.3" />
+    <path d="M26 18.5H31V32H26V18.5Z" strokeWidth="1.3" />
+    {/* Side Windows */}
+    <path d="M11 22H12M11 26H12" strokeWidth="1.2" />
+    <path d="M28 22H29M28 26H29" strokeWidth="1.2" />
+    {/* Base Foundation */}
+    <path d="M6 32H34" strokeWidth="1.8" />
   </svg>
 );
 
-const ClocheIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M12 4C12 4 12 6 12 6" />
-    <circle cx="12" cy="4" r="1" fill="currentColor" />
-    <path d="M4 18C4 13 7.5 9 12 9C16.5 9 20 13 20 18H4Z" />
-    <path d="M2 20H22" />
-  </svg>
-);
-
-// Custom Dancer Icon
-const DancerIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="4" r="2" />
-    <path d="M12 6V13L16 20" />
-    <path d="M12 13L8 20" />
-    <path d="M7 9L12 8L17 9" />
+const LuxuryClocheIcon = ({ className = "w-7 h-7" }: { className?: string }) => (
+  <svg viewBox="0 0 40 40" fill="none" stroke="#C8A46A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    {/* Top Knob Handle */}
+    <circle cx="20" cy="10.5" r="2.2" strokeWidth="1.4" />
+    <path d="M20 12.7V14.5" strokeWidth="1.4" />
+    {/* Dome Body */}
+    <path d="M9 27C9 18 13.8 14.5 20 14.5C26.2 15 31 18 31 27H9Z" strokeWidth="1.5" />
+    {/* Specular Highlight Arc */}
+    <path d="M12.5 24C14.5 19.5 17 17.5 20 17.5" strokeWidth="1.2" strokeOpacity="0.85" />
+    {/* Base Tray Line */}
+    <path d="M6 29H34" strokeWidth="2.2" />
+    <path d="M8 29C8 31 10 32.2 12 32.2H28C30 32.2 32 31 32 29" strokeWidth="1.3" />
   </svg>
 );
 
@@ -76,7 +106,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       title: 'WEDDINGS & ENGAGEMENTS',
       description: 'Luxury weddings and engagements designed with elegance, romance and unforgettable moments.',
       image: '/blancosevents-image-home/wedding.webp',
-      icon: RingIcon,
+      icon: LuxuryWeddingRingsIcon,
       buttonText: 'EXPLORE WEDDINGS',
       href: '/#contact',
     },
@@ -85,7 +115,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       title: 'PRIVATE CELEBRATIONS',
       description: 'Birthdays, anniversaries, proposals and special occasions that deserve to be extraordinary.',
       image: '/blancosevents-image-home/private.webp',
-      icon: CakeIcon,
+      icon: LuxuryCakeIcon,
       buttonText: 'EXPLORE CELEBRATIONS',
       href: '/#contact',
     },
@@ -94,7 +124,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       title: 'CORPORATE EVENTS',
       description: 'Product launches, conferences, gala dinners and brand activations that make an impact.',
       image: '/blancosevents-image-home/coorporate.webp',
-      icon: BuildingIcon,
+      icon: LuxuryBuildingIcon,
       buttonText: 'EXPLORE CORPORATE',
       href: '/#contact',
     },
@@ -103,7 +133,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       title: 'HOTELS, RESTAURANTS & VENUES',
       description: 'Event styling and management that elevates guest experiences and enhances your brand.',
       image: '/blancosevents-image-home/hotel.webp',
-      icon: ClocheIcon,
+      icon: LuxuryClocheIcon,
       buttonText: 'EXPLORE HOSPITALITY',
       href: '/#contact',
     },
@@ -169,10 +199,10 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative flex flex-col bg-[#08080A] rounded-sm overflow-hidden border border-[#C5A059]/30 hover:border-[#D4AF37] transition-all duration-500 shadow-xl"
+                className="group relative flex flex-col bg-[#08080A] rounded-sm overflow-visible border border-[#C5A059]/30 hover:border-[#D4AF37] transition-all duration-500 shadow-xl"
               >
                 {/* Image Container */}
-                <div className="relative h-60 w-full overflow-hidden bg-neutral-900">
+                <div className="relative h-60 w-full overflow-hidden bg-neutral-900 rounded-t-sm">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -181,15 +211,15 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08080A] via-transparent to-transparent opacity-80" />
+                </div>
 
-                  {/* Floating Circular Badge Icon */}
-                  <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-13 h-13 rounded-full bg-[#08080A] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] shadow-[0_4px_20px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300 z-10">
-                    <IconComponent className="w-6 h-6" />
-                  </div>
+                {/* Floating Circular Badge Icon - outside image container for proper z-index */}
+                <div className="absolute top-[212px] left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-[#08080A] border-[1.5px] border-[#C8A46A] flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300 z-50">
+                  <IconComponent className="w-7 h-7" />
                 </div>
 
                 {/* Card Text Content */}
-                <div className="pt-9 pb-7 px-5 flex flex-col items-center text-center flex-grow bg-[#08080A]">
+                <div className="pt-10 pb-7 px-5 flex flex-col items-center text-center flex-grow bg-[#08080A] rounded-b-sm">
                   <h2 className="text-xs sm:text-[13px] font-bold tracking-[0.18em] text-[#C5A059] uppercase mb-3 leading-snug">
                     {service.title}
                   </h2>
