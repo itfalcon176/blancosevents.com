@@ -117,19 +117,16 @@ export const AboutUsSection: React.FC = () => {
             transition={{ duration: 0.7 }}
             className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0 self-stretch"
           >
-            <div className="relative group w-full h-full min-h-[500px] lg:min-h-[620px]">
-              {/* Main Image Container - Flush Left Edge */}
-              <div className="relative overflow-hidden w-full h-full bg-white">
-                <Image
-                  src="/about-us-image/img3.webp"
-                  alt="Blanca - Founder & Creative Director of Blanca's Events"
-                  fill
-                  className="object-contain object-left transform transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 35vw"
-                  priority
-                />
-              </div>
-            </div>
+
+            <Image
+              src="/about-us-image/img3.webp"
+              alt="Blanca - Founder & Creative Director of Blanca's Events"
+              fill
+              className="object-contain object-left transform transition-transform duration-700 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 35vw"
+              priority
+            />
+
           </motion.div>
 
           {/* Column 2: Header + Founder Letter & Story (Width Reduced to 30%) */}
