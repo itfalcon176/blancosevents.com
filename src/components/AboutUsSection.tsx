@@ -110,24 +110,24 @@ export const AboutUsSection: React.FC = () => {
       {/* TOP SECTION: Founder Story & Value Props             */}
       {/* ---------------------------------------------------- */}
       <div className="w-full pt-0 pb-0">
-        {/* 3-Column Main Content Layout - 35% / 42% / 23% Ratio */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-start w-full">
-          {/* Column 1: Founder Image (35% Width) */}
+        {/* 3-Column Main Content Layout */}
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-stretch w-full">
+          {/* Column 1: Founder Image (35% Width - Full Height Cover) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0"
+            className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0 self-stretch"
           >
-            <div className="relative group w-full aspect-[4/5] min-h-[400px] max-h-[520px]">
+            <div className="relative group w-full h-full min-h-[500px] lg:min-h-[620px]">
               {/* Main Image Container - Flush Left Edge */}
-              <div className="relative overflow-hidden shadow-xl w-full h-full bg-[#111]">
+              <div className="relative overflow-hidden w-full h-full bg-[#111]">
                 <Image
-                  src="/about-us-image/Screenshot 2026-08-05 104246.jpg"
+                  src="/about-us-image/img 2 (1).png"
                   alt="Blanca - Founder & Creative Director of Blanca's Events"
                   fill
-                  className="object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain object-left transform transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 35vw"
                   priority
                 />
@@ -135,17 +135,17 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 2: Header + Founder Letter & Story (Width Reduced to 36%) */}
+          {/* Column 2: Header + Founder Letter & Story (Width Reduced to 30%) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="w-full lg:w-[30%] xl:w-[30%] space-y-3 text-center lg:text-left px-6 lg:px-2 pt-4 lg:pt-8 flex-shrink-0"
+            className="w-full lg:w-[30%] xl:w-[25%] space-y-3 text-left px-4 sm:px-6 pt-4 lg:pt-8 flex-shrink-0"
           >
-            {/* Top Decorative Header inside Center Column aligned to Top */}
-            <div className="text-center lg:text-left mb-4">
-              <div className="flex items-center justify-center lg:justify-start gap-3 mb-1.5">
+            {/* Top Decorative Header inside Center Column - ONLY THIS IS CENTERED */}
+            <div className="text-center mb-5">
+              <div className="flex items-center justify-center gap-3 mb-1.5">
                 <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
                 <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#B88E3E] flex items-center gap-1.5">
                   <span className="rotate-45 text-[6px] fill-current">◆</span> ABOUT US <span className="rotate-45 text-[6px] fill-current">◆</span>
@@ -153,37 +153,45 @@ export const AboutUsSection: React.FC = () => {
                 <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
               </div>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-1 leading-tight">
+              {/* Flourish Ornament under ABOUT US */}
+              <div className="flex justify-center mb-2">
+                <svg viewBox="0 0 30 10" fill="none" stroke="#B88E3E" className="w-6 h-2.5 opacity-70">
+                  <path d="M2 5c3-3 6 3 10 0s7 3 10 0" strokeWidth="1.2" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-1 leading-tight text-center">
                 Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
               </h2>
 
-              <p className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase">
+              <p className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center">
                 THE HEART BEHIND BLANCA'S EVENTS
               </p>
             </div>
 
-            <h3 className="font-script text-3xl sm:text-4xl text-[#B88E3E] leading-snug">
+            {/* Everything below is left-aligned as before */}
+            <h3 className="font-script text-3xl sm:text-4xl text-[#B88E3E] leading-snug text-left">
               Hi, I'm Blanca
             </h3>
 
-            <p className="text-xs md:text-sm font-semibold text-[#1F1F1F]">
+            <p className="text-xs md:text-sm font-semibold text-[#1F1F1F] text-left">
               The founder and creative director of Blanca's Events.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
               With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
               Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
               From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
             </p>
 
-            <div className="pt-1">
-              <span className="font-script text-2xl sm:text-3xl text-[#B88E3E] flex items-center justify-center lg:justify-start gap-1.5">
+            <div className="pt-1 flex justify-start">
+              <span className="font-script text-2xl sm:text-3xl text-[#B88E3E] flex items-center justify-start gap-1.5">
                 Blanca <span className="text-[#B88E3E] text-xl">♥</span>
               </span>
             </div>
