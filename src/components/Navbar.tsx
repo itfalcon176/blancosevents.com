@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { ChevronDown, Menu, MessageCircle } from 'lucide-react';
@@ -56,9 +57,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
       <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between min-h-[48px]">
           {/* Logo */}
-          <a href="#home" className="flex items-center py-0.5">
+          <Link href="/" className="flex items-center py-0.5">
             <Logo variant="header" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden xl:flex items-center space-x-5">
