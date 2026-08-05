@@ -188,7 +188,7 @@ export const EventInquirySection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-2 flex flex-col space-y-6 pl-0 lg:pl-2"
+            className="lg:col-span-2 grid grid-cols-2 lg:flex lg:flex-col gap-x-4 gap-y-6 lg:space-y-6 lg:gap-0 pl-0 lg:pl-2"
           >
             {perks.map((perk, index) => (
               <div key={index} className="flex items-center space-x-3 group cursor-pointer">
