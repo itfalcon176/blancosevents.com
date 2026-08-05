@@ -137,17 +137,17 @@ export const AboutUsSection: React.FC = () => {
           >
             {/* Top Decorative Header inside Center Column - MATCHING PHOTO 1 EXACTLY */}
             <div className="text-center mb-6">
-              <div className="flex items-center justify-center gap-3.5 mb-2">
-                <span className="h-[1px] w-20 sm:w-24 bg-[#B88E3E]/70"></span>
-                <span className="text-[11px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-[#B88E3E]">
+              <div className="flex items-center justify-center gap-3.5 mb-2.5">
+                <span className="h-[1px] w-16 sm:w-24 bg-[#B88E3E]/70"></span>
+                <span className="text-xs lg:text-[11px] font-semibold tracking-[0.35em] uppercase text-[#B88E3E]">
                   ABOUT US
                 </span>
-                <span className="h-[1px] w-20 sm:w-24 bg-[#B88E3E]/70"></span>
+                <span className="h-[1px] w-16 sm:w-24 bg-[#B88E3E]/70"></span>
               </div>
 
               {/* Flourish Ornament under ABOUT US - Matching Width of Top Row */}
               <div className="flex justify-center mb-3">
-                <svg viewBox="0 0 200 12" fill="none" className="w-56 sm:w-64 h-3">
+                <svg viewBox="0 0 200 12" fill="none" className="w-48 sm:w-64 h-3">
                   <line x1="0" y1="6" x2="92" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
                   <circle cx="93.5" cy="6" r="1.2" fill="#B88E3E" />
                   <path d="M100 2L104 6L100 10L96 6Z" fill="#B88E3E" />
@@ -156,11 +156,11 @@ export const AboutUsSection: React.FC = () => {
                 </svg>
               </div>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] xl:text-[45px] font-serif text-[#1C1C1C] tracking-tight font-normal mb-3.5 leading-tight text-center whitespace-nowrap">
+              <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-[35px] xl:text-[45px] font-serif text-[#1C1C1C] tracking-tight font-normal mb-3.5 leading-tight text-center whitespace-nowrap">
                 Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
               </h2>
 
-              <p className="text-[11px] sm:text-xs font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center mt-3.5 sm:mt-4">
+              <p className="text-xs lg:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center mt-3.5 sm:mt-4">
                 THE HEART BEHIND BLANCA'S EVENTS
               </p>
             </div>
@@ -170,26 +170,21 @@ export const AboutUsSection: React.FC = () => {
               Hi, I'm Blanca
             </h3>
 
-            <div className="space-y-5 max-w-[471px]">
+            <div className="space-y-4 sm:space-y-5 max-w-[471px]">
               <p className="text-xs sm:text-sm font-semibold text-black text-left">
                 The founder and creative director of Blanca's Events.
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
-                <span className="block mb-2.5">With a deep love for beautiful details and a natural talent for bringing visions</span>
-                <span className="block mb-2.5">to life, I established Blanca's Events to offer a truly bespoke experience for</span>
-                <span className="block">those who value elegance, originality and exceptional service.</span>
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed sm:leading-loose">
+                With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
-                <span className="block mb-2.5">Every event we create is more than just a celebration – it's a reflection of</span>
-                <span className="block">your story, your style and the moments that matter most.</span>
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed sm:leading-loose">
+                Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
               </p>
 
-              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed">
-                <span className="block mb-2.5">From intimate gatherings to grand productions, my team and I are</span>
-                <span className="block mb-2.5">passionate about designing unforgettable events that leave a lasting</span>
-                <span className="block">impression on you and your guests.</span>
+              <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed sm:leading-loose">
+                From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
               </p>
             </div>
 
@@ -200,25 +195,25 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 3: 4 Right Feature Cards (Top Aligned with Hi, I'm Blanca - Increased Font Size & Black Text) */}
+          {/* Column 3: 4 Right Feature Cards (2 Columns on Mobile, Single Column on Desktop) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="w-full lg:w-[22%] xl:w-[22%] max-w-[290px] space-y-5 px-4 sm:px-6 lg:px-0 lg:pl-4 xl:pl-6 pr-4 pt-14 lg:pt-[108px] flex-shrink-0"
+            className="w-full lg:w-[22%] xl:w-[22%] max-w-full lg:max-w-[290px] mx-auto lg:mx-0 px-4 sm:px-6 lg:px-0 lg:pl-4 xl:pl-6 pr-4 pt-6 lg:pt-[175px] flex-shrink-0 grid grid-cols-2 lg:flex lg:flex-col gap-4 sm:gap-6 lg:gap-0 lg:space-y-5"
           >
             {/* Feature 1 */}
-            <div className="pb-4 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-4">
+            <div className="pb-3 sm:pb-4 lg:border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-2.5 sm:space-x-4">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <DiamondIcon className="w-8 h-8 sm:w-9 sm:h-9" />
+                  <DiamondIcon className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 </div>
                 <div className="max-w-[240px]">
-                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] sm:text-xs lg:text-[13px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     BESPOKE BY DESIGN
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
+                  <p className="text-[11px] sm:text-xs lg:text-[13px] text-black font-medium leading-relaxed">
                     Every detail is thoughtfully curated to reflect your unique style.
                   </p>
                 </div>
@@ -226,16 +221,16 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="pb-4 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-4">
+            <div className="pb-3 sm:pb-4 lg:border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-2.5 sm:space-x-4">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <UsersIcon className="w-8 h-8 sm:w-9 sm:h-9" />
+                  <UsersIcon className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 </div>
                 <div className="max-w-[240px]">
-                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] sm:text-xs lg:text-[13px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     CLIENT-FIRST APPROACH
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
+                  <p className="text-[11px] sm:text-xs lg:text-[13px] text-black font-medium leading-relaxed">
                     We listen, guide and support you at every step of the journey.
                   </p>
                 </div>
@@ -243,16 +238,16 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="pb-4 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-4">
+            <div className="pb-3 sm:pb-4 lg:border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-2.5 sm:space-x-4">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <QualityAwardIcon className="w-8 h-8 sm:w-9 sm:h-9" />
+                  <QualityAwardIcon className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 </div>
                 <div className="max-w-[240px]">
-                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] sm:text-xs lg:text-[13px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     EXCEPTIONAL QUALITY
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
+                  <p className="text-[11px] sm:text-xs lg:text-[13px] text-black font-medium leading-relaxed">
                     We work with the finest partners and never compromise on quality.
                   </p>
                 </div>
@@ -260,16 +255,16 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             {/* Feature 4 */}
-            <div>
-              <div className="flex items-start space-x-4">
+            <div className="pb-3 sm:pb-4 lg:pb-0">
+              <div className="flex items-start space-x-2.5 sm:space-x-4">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <HeartIcon className="w-8 h-8 sm:w-9 sm:h-9" />
+                  <HeartIcon className="w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9" />
                 </div>
                 <div className="max-w-[240px]">
-                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] sm:text-xs lg:text-[13px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     PASSIONATE TEAM
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
+                  <p className="text-[11px] sm:text-xs lg:text-[13px] text-black font-medium leading-relaxed">
                     A dedicated team that treats your event as if it were our own.
                   </p>
                 </div>
