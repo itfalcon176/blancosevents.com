@@ -230,7 +230,7 @@ export const PortfolioSection: React.FC = () => {
           {/* Top Right Controls */}
           <div className="flex items-center justify-center sm:justify-end space-x-3 w-full sm:w-auto">
             <a
-              href="#contact"
+              href="/portfolio"
               className="px-5 py-2.5 border border-[#C5A059] text-neutral-800 hover:text-black hover:bg-[#C5A059]/10 transition-colors text-xs font-semibold tracking-[0.18em] uppercase rounded-sm flex items-center"
             >
               <span>VIEW FULL PORTFOLIO</span>
