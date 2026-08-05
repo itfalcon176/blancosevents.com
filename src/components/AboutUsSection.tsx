@@ -105,114 +105,108 @@ export const AboutUsSection: React.FC = () => {
       {/* ---------------------------------------------------- */}
       {/* TOP SECTION: Founder Story & Value Props             */}
       {/* ---------------------------------------------------- */}
-      <div className="pt-16 pb-16 px-4 sm:px-6 lg:px-12 max-w-[1500px] mx-auto">
-        {/* Top Decorative Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
-            <span className="text-[11px] font-bold tracking-[0.3em] uppercase text-[#B88E3E] flex items-center gap-2">
-              <span className="rotate-45 text-[7px] fill-current">◆</span> ABOUT US <span className="rotate-45 text-[7px] fill-current">◆</span>
-            </span>
-            <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
-          </div>
-
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-2">
-            Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
-          </h2>
-
-          <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase">
-            THE HEART BEHIND BLANCA'S EVENTS
-          </p>
-        </motion.div>
-
-        {/* 3-Column Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* Column 1: Arch Founder Image (4 cols) */}
+      {/* ---------------------------------------------------- */}
+      {/* TOP SECTION: Founder Story & Value Props             */}
+      {/* ---------------------------------------------------- */}
+      <div className="w-full pt-0 pb-0">
+        {/* 3-Column Main Content Layout - 35% / 42% / 23% Ratio */}
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-start w-full">
+          {/* Column 1: Founder Image (35% Width) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-4 flex justify-center lg:justify-start"
+            className="w-full lg:w-[35%] xl:w-[35%] relative flex justify-start pl-0 flex-shrink-0"
           >
-            <div className="relative group max-w-[380px] w-full">
-              {/* Outer Decorative Frame Accent */}
-              <div className="absolute -inset-2.5 border border-[#B88E3E]/30 rounded-tl-[160px] rounded-br-[40px] pointer-events-none transform transition-transform group-hover:scale-[1.01]" />
-              
-              {/* Main Image Container with Arch Cut on Top-Left */}
-              <div className="relative overflow-hidden rounded-tl-[150px] rounded-br-[36px] border-2 border-[#B88E3E]/80 shadow-2xl aspect-[4/5] bg-[#111]">
+            <div className="relative group w-full aspect-[4/5] min-h-[400px] max-h-[520px]">
+              {/* Main Image Container - Flush Left Edge */}
+              <div className="relative overflow-hidden shadow-xl w-full h-full bg-[#111]">
                 <Image
                   src="/blanca-founder.png"
                   alt="Blanca - Founder & Creative Director of Blanca's Events"
                   fill
                   className="object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 380px"
+                  sizes="(max-width: 768px) 100vw, 35vw"
                   priority
                 />
               </div>
             </div>
           </motion.div>
 
-          {/* Column 2: Founder Letter & Story (5 cols) */}
+          {/* Column 2: Header + Founder Letter & Story (42% Width) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="lg:col-span-5 space-y-4 text-left"
+            className="w-full lg:w-[42%] xl:w-[42%] space-y-3 text-center lg:text-left px-6 lg:px-2 pt-0 flex-shrink-0"
           >
-            <h3 className="font-script text-4xl sm:text-5xl text-[#B88E3E] leading-snug">
+            {/* Top Decorative Header inside Center Column aligned to Top */}
+            <div className="text-center lg:text-left mb-4">
+              <div className="flex items-center justify-center lg:justify-start gap-3 mb-1.5">
+                <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
+                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#B88E3E] flex items-center gap-1.5">
+                  <span className="rotate-45 text-[6px] fill-current">◆</span> ABOUT US <span className="rotate-45 text-[6px] fill-current">◆</span>
+                </span>
+                <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-1 leading-tight">
+                Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
+              </h2>
+
+              <p className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase">
+                THE HEART BEHIND BLANCA'S EVENTS
+              </p>
+            </div>
+
+            <h3 className="font-script text-3xl sm:text-4xl text-[#B88E3E] leading-snug">
               Hi, I'm Blanca
             </h3>
 
-            <p className="text-sm md:text-base font-semibold text-[#1F1F1F]">
+            <p className="text-xs md:text-sm font-semibold text-[#1F1F1F]">
               The founder and creative director of Blanca's Events.
             </p>
 
-            <p className="text-xs sm:text-sm text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal">
               With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
             </p>
 
-            <p className="text-xs sm:text-sm text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal">
               Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
             </p>
 
-            <p className="text-xs sm:text-sm text-[#444444] leading-relaxed font-normal">
+            <p className="text-xs text-[#444444] leading-relaxed font-normal">
               From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
             </p>
 
-            <div className="pt-2">
-              <span className="font-script text-3xl sm:text-4xl text-[#B88E3E] flex items-center gap-1.5">
-                Blanca <span className="text-[#B88E3E] text-2xl">♥</span>
+            <div className="pt-1">
+              <span className="font-script text-2xl sm:text-3xl text-[#B88E3E] flex items-center justify-center lg:justify-start gap-1.5">
+                Blanca <span className="text-[#B88E3E] text-xl">♥</span>
               </span>
             </div>
           </motion.div>
 
-          {/* Column 3: 4 Right Feature Cards (3 cols) */}
+          {/* Column 3: 4 Right Feature Cards (23% Width) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-3 space-y-6 border-l border-[#E2DAD0] pl-0 lg:pl-8"
+            className="w-full lg:w-[23%] xl:w-[23%] space-y-4 lg:border-l border-[#E2DAD0] px-6 lg:px-0 lg:pl-6 xl:pl-8 pr-6 lg:pr-8 xl:pr-12 pt-0 flex-shrink-0"
           >
             {/* Feature 1 */}
-            <div className="pb-5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3.5">
+            <div className="pb-3.5 border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-3">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <DiamondIcon className="w-5 h-5" />
+                  <DiamondIcon className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
                     BESPOKE BY DESIGN
                   </h4>
-                  <p className="text-xs text-[#555555] leading-relaxed">
+                  <p className="text-[11px] text-[#555555] leading-relaxed">
                     Every detail is thoughtfully curated to reflect your unique style.
                   </p>
                 </div>
@@ -220,16 +214,16 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="pb-5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3.5">
+            <div className="pb-3.5 border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-3">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <UsersIcon className="w-5 h-5" />
+                  <UsersIcon className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
                     CLIENT-FIRST APPROACH
                   </h4>
-                  <p className="text-xs text-[#555555] leading-relaxed">
+                  <p className="text-[11px] text-[#555555] leading-relaxed">
                     We listen, guide and support you at every step of the journey.
                   </p>
                 </div>
@@ -237,16 +231,16 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="pb-5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3.5">
+            <div className="pb-3.5 border-b border-[#E5DFD5]">
+              <div className="flex items-start space-x-3">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <QualityAwardIcon className="w-5 h-5" />
+                  <QualityAwardIcon className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
                     EXCEPTIONAL QUALITY
                   </h4>
-                  <p className="text-xs text-[#555555] leading-relaxed">
+                  <p className="text-[11px] text-[#555555] leading-relaxed">
                     We work with the finest partners and never compromise on quality.
                   </p>
                 </div>
@@ -255,15 +249,15 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Feature 4 */}
             <div>
-              <div className="flex items-start space-x-3.5">
+              <div className="flex items-start space-x-3">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <HeartIcon className="w-5 h-5" />
+                  <HeartIcon className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
                     PASSIONATE TEAM
                   </h4>
-                  <p className="text-xs text-[#555555] leading-relaxed">
+                  <p className="text-[11px] text-[#555555] leading-relaxed">
                     A dedicated team that treats your event as if it were our own.
                   </p>
                 </div>
@@ -276,10 +270,10 @@ export const AboutUsSection: React.FC = () => {
       {/* ---------------------------------------------------- */}
       {/* MIDDLE SECTION: Why Clients Choose Us Banner         */}
       {/* ---------------------------------------------------- */}
-      <div className="bg-[#FAF3EA] border-y border-[#E8DFC5]/60 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[1500px] mx-auto">
+      <div className="bg-[#FAF3EA] border-y border-[#E8DFC5]/60 py-8 px-4 sm:px-8 lg:px-12 xl:px-16 w-full">
+        <div className="w-full">
           {/* Header */}
-          <div className="flex items-center justify-center gap-3 mb-10 text-center">
+          <div className="flex items-center justify-center gap-3 mb-6 text-center">
             <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
             <h3 className="text-xs font-bold tracking-[0.25em] text-[#B88E3E] uppercase">
               WHY CLIENTS CHOOSE US
@@ -288,13 +282,13 @@ export const AboutUsSection: React.FC = () => {
           </div>
 
           {/* 5 Cards Row with Dividers */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-0">
             {/* Box 1 */}
             <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
-                <ClipboardIcon className="w-6 h-6" />
+              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                <ClipboardIcon className="w-5 h-5" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-2">
+              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
                 DETAIL ORIENTED
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
@@ -304,10 +298,10 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Box 2 */}
             <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
-                <CalendarIcon className="w-6 h-6" />
+              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                <CalendarIcon className="w-5 h-5" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-2">
+              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
                 SEAMLESS PLANNING
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
@@ -317,10 +311,10 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Box 3 */}
             <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
-                <LightbulbIcon className="w-6 h-6" />
+              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                <LightbulbIcon className="w-5 h-5" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-2">
+              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
                 CREATIVE EXCELLENCE
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
@@ -330,10 +324,10 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Box 4 */}
             <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
-                <HandshakeIcon className="w-6 h-6" />
+              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                <HandshakeIcon className="w-5 h-5" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-2">
+              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
                 TRUSTED PARTNERS
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
@@ -343,10 +337,10 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Box 5 */}
             <div className="flex flex-col items-center text-center px-4">
-              <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
-                <StarIcon className="w-6 h-6" />
+              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                <StarIcon className="w-5 h-5" />
               </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-2">
+              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
                 MEMORABLE EXPERIENCES
               </h4>
               <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
@@ -360,14 +354,14 @@ export const AboutUsSection: React.FC = () => {
       {/* ---------------------------------------------------- */}
       {/* BOTTOM SECTION: Dark Mission Quote & Key Metrics     */}
       {/* ---------------------------------------------------- */}
-      <div className="relative bg-[#09090B] text-white py-14 px-4 sm:px-6 lg:px-12 overflow-hidden border-t border-[#D4AF37]/20">
+      <div className="relative bg-[#09090B] text-white py-9 px-4 sm:px-8 lg:px-12 xl:px-16 overflow-hidden border-t border-[#D4AF37]/20 w-full">
         {/* Subtle Dark Floral Watermark Background */}
-        <div 
+        <div
           className="absolute inset-0 opacity-15 bg-cover bg-left pointer-events-none mix-blend-luminosity"
           style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
         />
 
-        <div className="relative max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Column: Quote (5 cols) */}
           <div className="lg:col-span-5 flex items-start space-x-4">
             <span className="font-serif text-6xl md:text-7xl text-[#C5A059] leading-none select-none -mt-2">
