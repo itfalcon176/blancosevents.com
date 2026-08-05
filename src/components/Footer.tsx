@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 <li><a href="/" className="hover:text-[#D4AF37] transition-colors">Home</a></li>
                 <li><a href="/about" className="hover:text-[#D4AF37] transition-colors">About Us</a></li>
                 <li><a href="/#services" className="hover:text-[#D4AF37] transition-colors">Services</a></li>
-                <li><a href="/#portfolio" className="hover:text-[#D4AF37] transition-colors">Portfolio</a></li>
+                <li><a href="/portfolio" className="hover:text-[#D4AF37] transition-colors">Portfolio</a></li>
                 <li><a href="/#contact" className="hover:text-[#D4AF37] transition-colors">Contact Us</a></li>
               </ul>
             </div>

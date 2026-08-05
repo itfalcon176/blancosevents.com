@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
         'Hotels, Restaurants & Venues',
       ],
     },
-    { name: 'PORTFOLIO', href: '/#portfolio' },
+    { name: 'PORTFOLIO', href: '/portfolio', active: pathname === '/portfolio' },
     { name: 'CASE STUDIES', href: '/#casestudies' },
     { name: 'TESTIMONIALS', href: '/#testimonials' },
     { name: 'BLOG', href: '/#blog' },

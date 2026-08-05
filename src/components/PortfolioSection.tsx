@@ -142,9 +142,19 @@ export const PortfolioSection: React.FC = () => {
         {/* ================= TOP HALF: OUR PORTFOLIO ================= */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-6">
           <div>
-            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-[#C5A059] mb-2">
-              OUR PORTFOLIO
-            </p>
+            {/* Decorative heading with side lines + diamond */}
+            <div className="flex items-center gap-4 sm:gap-6 mb-2">
+              <div className="h-px w-16 sm:w-24 bg-[#C5A059]/40" />
+              <p className="text-[11px] sm:text-xs font-semibold tracking-[0.35em] uppercase text-[#C5A059]">
+                OUR PORTFOLIO
+              </p>
+              <div className="h-px w-16 sm:w-24 bg-[#C5A059]/40" />
+            </div>
+            <div className="flex items-center gap-0 mb-3">
+              <div className="h-px w-12 sm:w-16 bg-[#C5A059]/30" />
+              <div className="w-2.5 h-2.5 rotate-45 border border-[#C5A059] bg-[#C5A059]/20 mx-2" />
+              <div className="h-px w-12 sm:w-16 bg-[#C5A059]/30" />
+            </div>
             <h2
               className="text-3xl sm:text-4xl md:text-5xl font-serif text-black tracking-tight"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
