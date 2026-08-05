@@ -373,9 +373,9 @@ export const AboutUsSection: React.FC = () => {
           style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
         />
 
-        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           {/* Left Column: Quote (4 cols) */}
-          <div className="lg:col-span-4 flex items-start space-x-3.5">
+          <div className="lg:col-span-4 flex items-start space-x-3.5 pr-2">
             <span className="font-serif text-5xl md:text-6xl text-[#C5A059] leading-none select-none -mt-1">
               “
             </span>
@@ -386,13 +386,8 @@ export const AboutUsSection: React.FC = () => {
             </p>
           </div>
 
-          {/* Center Vertical Divider (1 col / hidden on mobile) */}
-          <div className="hidden lg:flex lg:col-span-1 justify-center h-24">
-            <div className="w-[1px] bg-gradient-to-b from-transparent via-[#C5A059]/40 to-transparent" />
-          </div>
-
-          {/* Right Column: 4 Stat Boxes (7 cols) */}
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-0 text-center items-stretch divide-y sm:divide-y-0 sm:divide-x divide-[#C5A059]/25">
+          {/* Right Column: 4 Stat Boxes (8 cols) - 100% Equal Gaps for All Dividers */}
+          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-0 text-center items-stretch divide-y sm:divide-y-0 sm:divide-x divide-[#C5A059]/25 sm:border-l border-[#C5A059]/25">
             {/* Stat 1 */}
             <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
               <div className="flex justify-center text-[#C5A059] mb-1">
