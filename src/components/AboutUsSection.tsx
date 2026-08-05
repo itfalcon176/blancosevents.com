@@ -32,7 +32,7 @@ const QualityAwardIcon = ({ className = "w-6 h-6" }: { className?: string }) => 
 
 const HeartIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
   </svg>
 );
 
@@ -197,13 +197,13 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 3: 4 Right Feature Cards (Top Aligned with Hi, I'm Blanca - Reduced Width & Larger Icons) */}
+          {/* Column 3: 4 Right Feature Cards (Top Aligned with Hi, I'm Blanca - Increased Font Size & Black Text) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="w-full lg:w-[20%] xl:w-[20%] max-w-[270px] space-y-5 px-4 sm:px-6 lg:px-0 lg:pl-4 xl:pl-6 pr-4 pt-14 lg:pt-[108px] flex-shrink-0"
+            className="w-full lg:w-[22%] xl:w-[22%] max-w-[290px] space-y-5 px-4 sm:px-6 lg:px-0 lg:pl-4 xl:pl-6 pr-4 pt-14 lg:pt-[108px] flex-shrink-0"
           >
             {/* Feature 1 */}
             <div className="pb-4 border-b border-[#E5DFD5]">
@@ -211,11 +211,11 @@ export const AboutUsSection: React.FC = () => {
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
                   <DiamondIcon className="w-8 h-8 sm:w-9 sm:h-9" />
                 </div>
-                <div className="max-w-[220px]">
-                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                <div className="max-w-[240px]">
+                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     BESPOKE BY DESIGN
                   </h4>
-                  <p className="text-[11px] text-[#555555] leading-relaxed">
+                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                     Every detail is thoughtfully curated to reflect your unique style.
                   </p>
                 </div>
@@ -228,11 +228,11 @@ export const AboutUsSection: React.FC = () => {
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
                   <UsersIcon className="w-8 h-8 sm:w-9 sm:h-9" />
                 </div>
-                <div className="max-w-[220px]">
-                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                <div className="max-w-[240px]">
+                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     CLIENT-FIRST APPROACH
                   </h4>
-                  <p className="text-[11px] text-[#555555] leading-relaxed">
+                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                     We listen, guide and support you at every step of the journey.
                   </p>
                 </div>
@@ -245,11 +245,11 @@ export const AboutUsSection: React.FC = () => {
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
                   <QualityAwardIcon className="w-8 h-8 sm:w-9 sm:h-9" />
                 </div>
-                <div className="max-w-[220px]">
-                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                <div className="max-w-[240px]">
+                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     EXCEPTIONAL QUALITY
                   </h4>
-                  <p className="text-[11px] text-[#555555] leading-relaxed">
+                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                     We work with the finest partners and never compromise on quality.
                   </p>
                 </div>
@@ -262,11 +262,11 @@ export const AboutUsSection: React.FC = () => {
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
                   <HeartIcon className="w-8 h-8 sm:w-9 sm:h-9" />
                 </div>
-                <div className="max-w-[220px]">
-                  <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
+                <div className="max-w-[240px]">
+                  <h4 className="text-xs sm:text-[13px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-1">
                     PASSIONATE TEAM
                   </h4>
-                  <p className="text-[11px] text-[#555555] leading-relaxed">
+                  <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                     A dedicated team that treats your event as if it were our own.
                   </p>
                 </div>
