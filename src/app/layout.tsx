@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cinzel as CinzelFont, Playfair_Display as PlayfairFont, Plus_Jakarta_Sans as JakartaFont } from 'next/font/google';
+import { Cinzel as CinzelFont, Playfair_Display as PlayfairFont, Plus_Jakarta_Sans as JakartaFont, Great_Vibes as ScriptFont } from 'next/font/google';
 import './globals.css';
 
 const cinzel = CinzelFont({
@@ -20,6 +20,13 @@ const jakarta = JakartaFont({
   display: 'swap',
 });
 
+const script = ScriptFont({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-script',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: 'Bespoke & Co. Luxury Events | Premium Event Planning & Management',
   description: 'Bespoke event planning, design & management for Weddings, Private Parties, Grand Celebrations, Hotel & Corporate Events and Social Soirées in Dubai & worldwide.',
@@ -37,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${playfair.variable} ${jakarta.variable}`}>
+    <html lang="en" className={`${cinzel.variable} ${playfair.variable} ${jakarta.variable} ${script.variable}`}>
       <body className="bg-[#08080A] text-[#FDFBF7] antialiased selection:bg-gold-500 selection:text-black">
         {children}
       </body>

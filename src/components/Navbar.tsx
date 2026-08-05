@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { Logo } from './Logo';
 import { ChevronDown, Menu, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -13,6 +14,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdown, setServicesDropdown] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,11 +25,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
   }, []);
 
   const navLinks = [
-    { name: 'HOME', href: '#home', active: true },
-    { name: 'ABOUT US', href: '#about' },
+    { name: 'HOME', href: '/', active: pathname === '/' },
+    { name: 'ABOUT US', href: '/about', active: pathname === '/about' },
     {
       name: 'SERVICES',
-      href: '#services',
+      href: '/#services',
       hasDropdown: true,
       items: [
         'Weddings & Engagements',
@@ -36,11 +38,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
         'Hotels, Restaurants & Venues',
       ],
     },
-    { name: 'PORTFOLIO', href: '#portfolio' },
-    { name: 'CASE STUDIES', href: '#casestudies' },
-    { name: 'TESTIMONIALS', href: '#testimonials' },
-    { name: 'BLOG', href: '#blog' },
-    { name: 'CONTACT US', href: '#contact' },
+    { name: 'PORTFOLIO', href: '/#portfolio' },
+    { name: 'CASE STUDIES', href: '/#casestudies' },
+    { name: 'TESTIMONIALS', href: '/#testimonials' },
+    { name: 'BLOG', href: '/#blog' },
+    { name: 'CONTACT US', href: '/#contact' },
   ];
 
   return (

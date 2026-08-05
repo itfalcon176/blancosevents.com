@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-playfair)", "var(--font-cinzel)", "Georgia", "serif"],
         sans: ["var(--font-jakarta)", "system-ui", "sans-serif"],
+        script: ["var(--font-script)", "cursive"],
       },
     },
   },
