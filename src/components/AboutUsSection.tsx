@@ -102,10 +102,7 @@ const GlobeIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
 
 export const AboutUsSection: React.FC = () => {
   return (
-    <section id="about" className="w-full bg-[#FAF8F5] text-[#222222] overflow-hidden">
-      {/* ---------------------------------------------------- */}
-      {/* TOP SECTION: Founder Story & Value Props             */}
-      {/* ---------------------------------------------------- */}
+    <section id="about" className="w-full bg-white text-[#222222] overflow-hidden">
       {/* ---------------------------------------------------- */}
       {/* TOP SECTION: Founder Story & Value Props             */}
       {/* ---------------------------------------------------- */}
@@ -122,9 +119,9 @@ export const AboutUsSection: React.FC = () => {
           >
             <div className="relative group w-full h-full min-h-[500px] lg:min-h-[620px]">
               {/* Main Image Container - Flush Left Edge */}
-              <div className="relative overflow-hidden w-full h-full bg-[#111]">
+              <div className="relative overflow-hidden w-full h-full bg-white">
                 <Image
-                  src="/about-us-image/img 2 (1).png"
+                  src="/about-us-image/img3.webp"
                   alt="Blanca - Founder & Creative Director of Blanca's Events"
                   fill
                   className="object-contain object-left transform transition-transform duration-700 group-hover:scale-105"
@@ -141,58 +138,59 @@ export const AboutUsSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="w-full lg:w-[30%] xl:w-[25%] space-y-3 text-left px-4 sm:px-6 pt-4 lg:pt-8 flex-shrink-0"
+            className="w-full lg:w-[30%] xl:w-[30%] space-y-3 text-left px-4 sm:px-6 pt-4 lg:pt-8 flex-shrink-0"
           >
-            {/* Top Decorative Header inside Center Column - ONLY THIS IS CENTERED */}
-            <div className="text-center mb-5">
+            {/* Top Decorative Header inside Center Column - CENTER ALIGNED MATCHING SCREENSHOT */}
+            <div className="text-center mb-6">
               <div className="flex items-center justify-center gap-3 mb-1.5">
-                <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
-                <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-[#B88E3E] flex items-center gap-1.5">
-                  <span className="rotate-45 text-[6px] fill-current">◆</span> ABOUT US <span className="rotate-45 text-[6px] fill-current">◆</span>
+                <span className="h-[1px] w-12 bg-[#B88E3E]/60"></span>
+                <span className="text-[11px] sm:text-xs font-medium tracking-[0.32em] uppercase text-[#B88E3E]">
+                  ABOUT US
                 </span>
-                <span className="h-[1px] w-10 bg-[#B88E3E]/40"></span>
+                <span className="h-[1px] w-12 bg-[#B88E3E]/60"></span>
               </div>
 
               {/* Flourish Ornament under ABOUT US */}
-              <div className="flex justify-center mb-2">
-                <svg viewBox="0 0 30 10" fill="none" stroke="#B88E3E" className="w-6 h-2.5 opacity-70">
-                  <path d="M2 5c3-3 6 3 10 0s7 3 10 0" strokeWidth="1.2" strokeLinecap="round" />
+              <div className="flex justify-center mb-2.5">
+                <svg viewBox="0 0 40 12" fill="none" stroke="#B88E3E" className="w-8 h-3 opacity-80">
+                  <path d="M4 6c4-4 8 4 16 0s12 4 16 0" strokeWidth="1.2" strokeLinecap="round" />
+                  <circle cx="20" cy="6" r="1.5" fill="#B88E3E" />
                 </svg>
               </div>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-1 leading-tight text-center">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#1C1C1C] tracking-tight font-normal mb-2 leading-tight text-center">
                 Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
               </h2>
 
-              <p className="text-[10px] md:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center">
+              <p className="text-[11px] sm:text-xs font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center">
                 THE HEART BEHIND BLANCA'S EVENTS
               </p>
             </div>
 
-            {/* Everything below is left-aligned as before */}
-            <h3 className="font-script text-3xl sm:text-4xl text-[#B88E3E] leading-snug text-left">
+            {/* Everything below is left-aligned matching screenshot */}
+            <h3 className="font-script text-4xl sm:text-5xl lg:text-5xl text-[#B88E3E] leading-snug text-left pt-2 font-normal">
               Hi, I'm Blanca
             </h3>
 
-            <p className="text-xs md:text-sm font-semibold text-[#1F1F1F] text-left">
+            <p className="text-xs sm:text-sm font-semibold text-[#111111] text-left">
               The founder and creative director of Blanca's Events.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
+            <p className="text-xs sm:text-sm text-[#383838] leading-[1.8] font-normal text-left">
               With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
+            <p className="text-xs sm:text-sm text-[#383838] leading-[1.8] font-normal text-left">
               Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
             </p>
 
-            <p className="text-xs text-[#444444] leading-relaxed font-normal text-left">
+            <p className="text-xs sm:text-sm text-[#383838] leading-[1.8] font-normal text-left">
               From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
             </p>
 
-            <div className="pt-1 flex justify-start">
-              <span className="font-script text-2xl sm:text-3xl text-[#B88E3E] flex items-center justify-start gap-1.5">
-                Blanca <span className="text-[#B88E3E] text-xl">♥</span>
+            <div className="pt-2 flex justify-start">
+              <span className="font-script text-3xl sm:text-4xl text-[#B88E3E] flex items-center justify-start gap-1.5 font-normal">
+                Blanca <span className="text-[#B88E3E] text-2xl">♥</span>
               </span>
             </div>
           </motion.div>
