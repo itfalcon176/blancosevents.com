@@ -11,9 +11,7 @@ export const ServicesSection: React.FC = () => {
       title: 'WEDDINGS &\nENGAGEMENTS',
       description:
         'Timeless moments, elegant design and flawless execution for your most precious celebrations.',
-      image:
-        '/blancosevents-image-home/wedding.webp',
-      // Transparent Gold Solitaire Ring Emblem Image
+      image: '/blancosevents-image-home/wedding.webp',
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
           <defs>
@@ -34,9 +32,7 @@ export const ServicesSection: React.FC = () => {
       title: 'PRIVATE\nCELEBRATIONS',
       description:
         'Birthdays, anniversaries, proposals & intimate gatherings made truly unforgettable.',
-      image:
-        '/blancosevents-image-home/private.webp',
-      // Transparent Gold Champagne Flutes Emblem Image
+      image: '/blancosevents-image-home/private.webp',
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
           <defs>
@@ -59,9 +55,7 @@ export const ServicesSection: React.FC = () => {
       title: 'CORPORATE &\nBRAND EVENTS',
       description:
         'Polished, impactful, and creative events that elevate your brand.',
-      image:
-        '/blancosevents-image-home/coorporate.webp',
-      // Transparent Gold Stage & Crown Emblem Image
+      image: '/blancosevents-image-home/coorporate.webp',
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
           <defs>
@@ -82,9 +76,7 @@ export const ServicesSection: React.FC = () => {
       title: 'HOTELS, RESTAURANTS\n& VENUES',
       description:
         'Curating & managing exceptional events in stunning spaces.',
-      image:
-        '/blancosevents-image-home/hotel.webp',
-      // Transparent Gold Food Cloche Dome Emblem Image
+      image: '/blancosevents-image-home/hotel.webp',
       iconElement: (
         <svg viewBox="0 0 40 40" className="w-8 h-8 filter drop-shadow-[0_2px_4px_rgba(212,175,55,0.4)]">
           <defs>

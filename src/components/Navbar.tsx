@@ -30,7 +30,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
     { name: 'ABOUT US', href: '/about', active: pathname === '/about' },
     {
       name: 'SERVICES',
-      href: '/#services',
+      href: '/services',
+      active: pathname === '/services',
       hasDropdown: true,
       items: [
         'Weddings & Engagements',
