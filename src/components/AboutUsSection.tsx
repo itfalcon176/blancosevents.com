@@ -376,8 +376,8 @@ export const AboutUsSection: React.FC = () => {
             </span>
             <p className="text-base md:text-xl font-serif text-neutral-100 font-light leading-relaxed">
               My mission is to turn your vision into an experience that feels{' '}
-              <span className="italic text-[#D4AF37] font-serif">effortless</span> for you and{' '}
-              <span className="italic text-[#D4AF37] font-serif">unforgettable</span> for your guests.
+              <span className="text-[#D4AF37] font-serif not-italic">effortless</span> for you and{' '}
+              <span className="text-[#D4AF37] font-serif not-italic">unforgettable</span> for your guests.
             </p>
           </div>
 

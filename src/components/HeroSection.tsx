@@ -56,7 +56,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base sm:text-xl md:text-2xl font-serif italic text-white/95 mb-6 tracking-wide"
+            className="text-base sm:text-xl md:text-2xl font-serif not-italic text-white/95 mb-6 tracking-wide"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             From vision to celebration – every detail perfected.

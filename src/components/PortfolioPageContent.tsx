@@ -144,7 +144,7 @@ export const PortfolioPageContent: React.FC = () => {
             >
               Moments Designed to{' '}
               <span
-                className="italic"
+                className="not-italic"
                 style={{
                   background: 'linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89230 100%)',
                   WebkitBackgroundClip: 'text',
@@ -265,7 +265,7 @@ export const PortfolioPageContent: React.FC = () => {
               >
                 Can we{' '}
                 <span
-                  className="italic"
+                  className="not-italic"
                   style={{
                     background: 'linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89230 100%)',
                     WebkitBackgroundClip: 'text',
@@ -331,7 +331,7 @@ export const PortfolioPageContent: React.FC = () => {
               >
                 Can we{' '}
                 <span
-                  className="italic"
+                  className="not-italic"
                   style={{
                     background: 'linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89230 100%)',
                     WebkitBackgroundClip: 'text',
