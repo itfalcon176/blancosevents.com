@@ -6,31 +6,32 @@ import { motion } from 'framer-motion';
 
 // Custom SVG Icons matching the reference design outline style exactly
 const DiamondIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <polygon points="12 2 2 9 12 22 22 9 12 2" />
-    <line x1="2" y1="9" x2="22" y2="9" />
-    <line x1="12" y1="2" x2="12" y2="22" />
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 2L3.5 8.5L12 22L20.5 8.5L12 2Z" />
+    <path d="M3.5 8.5H20.5" />
+    <path d="M8 8.5L12 2L16 8.5L12 22L8 8.5Z" />
   </svg>
 );
 
 const UsersIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="9" cy="7" r="3.5" />
+    <path d="M2 19c0-3.5 3.1-6 7-6s7 2.5 7 6" />
+    <path d="M16 3.5a3.5 3.5 0 0 1 0 7" />
+    <path d="M21 19c0-2.8-2-4.8-5-5.5" />
   </svg>
 );
 
 const QualityAwardIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="8" r="6" />
-    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="8.5" r="5.5" />
+    <circle cx="12" cy="8.5" r="2.5" />
+    <path d="M8.5 13.5L7 21.5L12 18.8L17 21.5L15.5 13.5" />
   </svg>
 );
 
 const HeartIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
   </svg>
 );
@@ -123,7 +124,7 @@ export const AboutUsSection: React.FC = () => {
               {/* Main Image Container - Flush Left Edge */}
               <div className="relative overflow-hidden shadow-xl w-full h-full bg-[#111]">
                 <Image
-                  src="/blanca-founder.png"
+                  src="/about-us-image/Screenshot 2026-08-05 104246.jpg"
                   alt="Blanca - Founder & Creative Director of Blanca's Events"
                   fill
                   className="object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
@@ -134,13 +135,13 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 2: Header + Founder Letter & Story (42% Width) */}
+          {/* Column 2: Header + Founder Letter & Story (Width Reduced to 36%) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="w-full lg:w-[42%] xl:w-[42%] space-y-3 text-center lg:text-left px-6 lg:px-2 pt-0 flex-shrink-0"
+            className="w-full lg:w-[30%] xl:w-[30%] space-y-3 text-center lg:text-left px-6 lg:px-2 pt-4 lg:pt-8 flex-shrink-0"
           >
             {/* Top Decorative Header inside Center Column aligned to Top */}
             <div className="text-center lg:text-left mb-4">
@@ -188,19 +189,19 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 3: 4 Right Feature Cards (23% Width) */}
+          {/* Column 3: 4 Right Feature Cards (Top Aligned with Hi, I'm Blanca) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="w-full lg:w-[23%] xl:w-[23%] space-y-4 lg:border-l border-[#E2DAD0] px-6 lg:px-0 lg:pl-6 xl:pl-8 pr-6 lg:pr-8 xl:pr-12 pt-0 flex-shrink-0"
+            className="w-full lg:w-[23%] xl:w-[23%] space-y-4 px-6 lg:px-0 lg:pl-6 xl:pl-8 pr-6 lg:pr-8 xl:pr-12 pt-14 lg:pt-[108px] flex-shrink-0"
           >
             {/* Feature 1 */}
             <div className="pb-3.5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3.5">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <DiamondIcon className="w-4 h-4" />
+                  <DiamondIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 <div>
                   <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
@@ -215,9 +216,9 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Feature 2 */}
             <div className="pb-3.5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3.5">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <UsersIcon className="w-4 h-4" />
+                  <UsersIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 <div>
                   <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
@@ -232,9 +233,9 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Feature 3 */}
             <div className="pb-3.5 border-b border-[#E5DFD5]">
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3.5">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <QualityAwardIcon className="w-4 h-4" />
+                  <QualityAwardIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 <div>
                   <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
@@ -249,9 +250,9 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Feature 4 */}
             <div>
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3.5">
                 <div className="text-[#B88E3E] mt-0.5 flex-shrink-0">
-                  <HeartIcon className="w-4 h-4" />
+                  <HeartIcon className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 <div>
                   <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B88E3E] uppercase mb-0.5">
