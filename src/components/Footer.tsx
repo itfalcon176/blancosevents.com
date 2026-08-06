@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
             {/* 4 Circular Gold Line Social Icons */}
             <div className="flex items-center space-x-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/blancosevents.dxb"
                 target="_blank"
                 rel="noreferrer"
                 className="w-7 h-7 rounded-full border border-[#D4AF37]/60 flex items-center justify-center text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all shadow-md"
@@ -132,7 +132,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
               <ul className="space-y-2.5 text-[11.5px] text-neutral-300 font-light mb-5">
                 <li className="flex items-center space-x-2.5">
                   <Phone className="w-3.5 h-3.5 text-[#C5A059]" />
-                  <span>+971 50 123 4567</span>
+                  <a 
+                    href="https://wa.me/971569292967?text=Hello%20Blanco%27s%20Events%2C%20I%20would%20like%20to%20inquire%20about%20planning%20a%20luxury%20event.%20I%20visited%20your%20website%20and%20would%20love%20to%20start%20a%20conversation."
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#D4AF37] transition-colors"
+                  >
+                    +971 56 929 2967
+                  </a>
                 </li>
                 <li className="flex items-center space-x-2.5">
                   <Mail className="w-3.5 h-3.5 text-[#C5A059]" />

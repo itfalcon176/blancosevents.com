@@ -122,7 +122,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
           <div className="flex items-center space-x-2.5">
             {/* WHATSAPP Pill Button matching screenshot */}
             <a
-              href="https://wa.me/971501234567"
+              href="https://wa.me/971569292967?text=Hello%20Blanco%27s%20Events%2C%20I%20would%20like%20to%20inquire%20about%20planning%20a%20luxury%20event.%20I%20visited%20your%20website%20and%20would%20love%20to%20start%20a%20conversation."
               target="_blank"
               rel="noreferrer"
               className="flex items-center space-x-1.5 px-3 py-1.5 xl:px-5 xl:py-2 border border-[#C5A059]/80 rounded-full text-white bg-black/80 hover:border-[#D4AF37] hover:bg-[#C5A059]/10 transition-all duration-300 shadow-md group animate-gold-pulse hover:scale-105"

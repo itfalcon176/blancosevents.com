@@ -37,7 +37,7 @@ export const ContactPageContent: React.FC = () => {
   };
 
   const handleOpenWhatsApp = () => {
-    window.open('https://wa.me/971501234567', '_blank');
+    window.open('https://wa.me/971569292967?text=Hello%20Blanco%27s%20Events%2C%20I%20would%20like%20to%20inquire%20about%20planning%20a%20luxury%20event.%20I%20visited%20your%20website%20and%20would%20love%20to%20start%20a%20conversation.', '_blank');
   };
 
   return (
@@ -138,7 +138,7 @@ export const ContactPageContent: React.FC = () => {
               CALL US
             </h3>
             <p className="text-sm font-semibold text-neutral-900 mb-1 tracking-wide">
-              <a href="tel:+971501234567" className="hover:text-[#C5A059] transition-colors">+971 50 123 4567</a>
+              <a href="tel:+971569292967" className="hover:text-[#C5A059] transition-colors">+971 56 929 2967</a>
             </p>
             <p className="text-[11px] text-neutral-500 font-light mt-1">
               Mon – Sat: 10:00 AM – 7:00 PM
