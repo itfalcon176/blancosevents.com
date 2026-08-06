@@ -387,7 +387,7 @@ export const PortfolioSection: React.FC = () => {
                         <h5 className="text-xs font-bold text-neutral-900 tracking-wide">
                           – {t.name}
                         </h5>
-                        <p className="text-[11px] text-neutral-500 italic font-light">
+                        <p className="text-[11px] text-neutral-500 font-light">
                           {t.location}
                         </p>
                       </div>

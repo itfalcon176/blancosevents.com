@@ -42,6 +42,42 @@ export const TestimonialsPageContent: React.FC = () => {
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
       videoUrl: 'https://www.youtube-nocookie.com/embed/S28X_KjT70Y',
     },
+    {
+      id: 5,
+      name: 'YASMINE & OMAR',
+      desc: 'Gala Dinner at Armani Hotel Dubai',
+      quote: 'An extraordinary evening of elegance. The floral arrangements and lighting created an intimate, magical atmosphere that exceeded our wildest expectations.',
+      image: '/portfolio-images/gala dinner.webp',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/5T8Lcfn6w8I',
+    },
+    {
+      id: 6,
+      name: 'CHARLOTTE & PIERRE',
+      desc: 'Anniversary at One&Only The Palm',
+      quote: 'Blanca and her team are master designers. The styling was sophisticated and captured our personalities perfectly. Thank you for a beautiful memory.',
+      image: '/portfolio-images/proposal.webp',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/G8D8kLwep2A',
+    },
+    {
+      id: 7,
+      name: 'ELENA & VLADIMIR',
+      desc: 'Milestone Birthday at Bulgari Resort',
+      quote: 'The absolute pinnacle of luxury party styling. From the custom entrance pavilion to the table staging, every guest was in complete awe.',
+      image: '/portfolio-images/birthday.webp',
+      avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ',
+    },
+    {
+      id: 8,
+      name: 'SARAH & THOMAS',
+      desc: 'Bespoke Floral Showcase',
+      quote: 'The floral installations were breathtaking works of art. Blanca has an unparalleled eye for color palettes and grand scale arrangements.',
+      image: '/portfolio-images/floral.webp',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop',
+      videoUrl: 'https://www.youtube-nocookie.com/embed/S28X_KjT70Y',
+    },
   ];
 
   const brands = [
@@ -138,7 +174,7 @@ export const TestimonialsPageContent: React.FC = () => {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#1C1C1C] font-normal leading-tight mb-4">
-          Kind Words. Beautiful <span className="text-[#B89052] italic font-serif">Memories.</span>
+          Kind Words. Beautiful <span className="text-[#B89052]">Memories.</span>
         </h1>
 
         <p className="text-xs sm:text-sm text-[#4A4A4A] max-w-2xl mx-auto font-medium leading-relaxed">
@@ -198,7 +234,7 @@ export const TestimonialsPageContent: React.FC = () => {
                     <span className="text-4xl font-serif text-[#B89052]/80 leading-none">“</span>
 
                     {/* Quote Text */}
-                    <p className="text-[13px] text-[#444444] leading-relaxed font-normal italic flex-grow max-w-[280px]">
+                    <p className="text-[13px] text-[#444444] leading-relaxed font-normal flex-grow max-w-[280px]">
                       {item.quote}
                     </p>
 
@@ -326,7 +362,7 @@ export const TestimonialsPageContent: React.FC = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-[28px] font-serif text-white font-normal leading-snug">
               Ready to create <br className="hidden sm:inline" />
-              your <span className="text-[#C5A059] italic font-serif">unforgettable</span> event?
+              your <span className="text-[#C5A059]">unforgettable</span> event?
             </h2>
           </div>
 

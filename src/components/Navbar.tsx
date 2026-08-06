@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
     { name: 'PORTFOLIO', href: '/portfolio', active: pathname === '/portfolio' },
     { name: 'TESTIMONIALS', href: '/testimonials', active: pathname === '/testimonials' },
     { name: 'BLOG', href: '/#blog' },
-    { name: 'CONTACT US', href: '/#contact' },
+    { name: 'CONTACT US', href: '/contact', active: pathname === '/contact' },
   ];
 
   return (

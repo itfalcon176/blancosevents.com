@@ -69,7 +69,7 @@ export const TestimonialsSection: React.FC = () => {
               {/* Quote Mark */}
               <div>
                 <Quote className="w-10 h-10 text-[#D4AF37] opacity-60 mb-4 rotate-180" />
-                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed italic mb-8">
+                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed mb-8">
                   "{item.quote}"
                 </p>
               </div>

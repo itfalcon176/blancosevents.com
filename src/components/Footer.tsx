@@ -33,7 +33,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
           {/* Column 1: Brand Logo & Description & Socials (lg:col-span-3) */}
           <div className="lg:col-span-3 pr-0 lg:pr-6 border-b lg:border-b-0 lg:border-r border-white/10 pb-8 lg:pb-0 flex flex-col justify-between h-full items-start text-left">
             <div className="w-full">
-              <Link href="/" className="mb-3 w-full flex justify-start items-start block">
+              <Link href="/" className="mb-3 w-full flex justify-start items-start">
                 <Logo variant="footer" align="left" className="w-full items-start" />
               </Link>
               <p className="text-[11.5px] text-neutral-300 font-light leading-relaxed mb-4 max-w-xs">
@@ -88,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 <li><a href="/about" className="hover:text-[#D4AF37] transition-colors">About Us</a></li>
                 <li><a href="/#services" className="hover:text-[#D4AF37] transition-colors">Services</a></li>
                 <li><a href="/portfolio" className="hover:text-[#D4AF37] transition-colors">Portfolio</a></li>
-                <li><a href="/#contact" className="hover:text-[#D4AF37] transition-colors">Contact Us</a></li>
+                <li><Link href="/contact" className="hover:text-[#D4AF37] transition-colors">Contact Us</Link></li>
               </ul>
             </div>
           </div>
