@@ -19,7 +19,7 @@ export const ContactPageContent: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.email || !formData.eventType) return;
-    
+
     // Simulate form submission
     setIsSubmitted(true);
     setTimeout(() => {
@@ -42,14 +42,14 @@ export const ContactPageContent: React.FC = () => {
 
   return (
     <div className="w-full bg-[#FAF8F5] text-[#222222] overflow-hidden">
-      
+
       {/* ──────────────────────────────────────────────────────── */}
       {/* HERO SECTION: Full-width Background Image Layout         */}
       {/* ──────────────────────────────────────────────────────── */}
       <section className="relative w-full bg-white overflow-hidden min-h-[550px] lg:min-h-[620px] flex items-center border-b border-[#EADFC9]/50">
-        
+
         {/* Full-width Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-no-repeat bg-right"
           style={{ backgroundImage: "url('/portfolio-images/Elegant Table Settings.webp')" }}
         />
@@ -60,7 +60,7 @@ export const ContactPageContent: React.FC = () => {
         {/* Text Content Area */}
         <div className="relative w-full max-w-[1550px] mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 py-16 sm:py-20 lg:py-24 text-left z-10">
           <div className="max-w-xl">
-            
+
             {/* Top Subheader Tag with flourish ornament */}
             <div className="mb-6 flex flex-col items-start">
               <span className="text-[11px] font-bold tracking-[0.35em] uppercase text-[#C5A059] mb-2.5">
@@ -77,13 +77,13 @@ export const ContactPageContent: React.FC = () => {
             </div>
 
             {/* Serif Heading */}
-            <h1 
+            <h1
               className="text-4xl sm:text-5xl lg:text-[54px] font-serif text-neutral-900 tracking-tight leading-[1.1] mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Let&apos;s Create <br />
               Something <br />
-              <span 
+              <span
                 className="not-italic"
                 style={{
                   background: 'linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89230 100%)',
@@ -102,14 +102,14 @@ export const ContactPageContent: React.FC = () => {
 
             {/* CTA Buttons side-by-side */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
+              <a
                 href="#enquiry-form"
                 className="inline-flex items-center justify-center gap-2.5 bg-[#C5A059] hover:bg-[#B89230] text-white px-7 py-4 text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300 shadow-md whitespace-nowrap"
               >
                 <Calendar className="w-4 h-4" />
                 <span>BOOK A CONSULTATION</span>
               </a>
-              <button 
+              <button
                 onClick={handleOpenWhatsApp}
                 className="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-neutral-50 text-[#C5A059] border border-[#C5A059] px-7 py-4 text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300 shadow-sm whitespace-nowrap"
               >
@@ -128,7 +128,7 @@ export const ContactPageContent: React.FC = () => {
       {/* ──────────────────────────────────────────────────────── */}
       <section className="py-12 px-6 sm:px-12 lg:px-16 max-w-[1000px] mx-auto">
         <div className="bg-white border border-[#EADFC9]/70 shadow-sm grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#EADFC9]/70">
-          
+
           {/* Card 1: Call Us */}
           <div className="py-5 px-4 flex flex-col items-center text-center">
             <div className="w-14 h-14 rounded-full border border-[#C5A059]/40 flex items-center justify-center text-[#C5A059] mb-4">
@@ -183,10 +183,10 @@ export const ContactPageContent: React.FC = () => {
       {/* ENQUIRY FORM SECTION: Send Us Your Enquiry               */}
       {/* ──────────────────────────────────────────────────────── */}
       <section id="enquiry-form" className="pb-20 px-6 sm:px-12 lg:px-16 max-w-[1000px] mx-auto scroll-mt-24">
-        
+
         {/* Form Container Card */}
         <div className="bg-white border border-[#EADFC9]/70 p-6 sm:p-12 shadow-sm relative">
-          
+
           {/* Header Title with Lines */}
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-3.5 mb-2.5">
@@ -226,10 +226,10 @@ export const ContactPageContent: React.FC = () => {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
-            
+
             {/* Input Row 1: Full Name & Phone */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
+
               {/* Full Name */}
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-400">
@@ -264,7 +264,7 @@ export const ContactPageContent: React.FC = () => {
 
             {/* Input Row 2: Email & Event Type */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
+
               {/* Email Address */}
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-400">
@@ -307,7 +307,7 @@ export const ContactPageContent: React.FC = () => {
 
             {/* Input Row 3: Event Date & Budget */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
+
               {/* Event Date */}
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-400">
@@ -378,20 +378,20 @@ export const ContactPageContent: React.FC = () => {
       {/* BOTTOM SECTION: Founder Quote & Call to Action           */}
       {/* ──────────────────────────────────────────────────────── */}
       <section className="relative w-full bg-[#08080A] text-white py-7 px-6 sm:px-10 lg:px-12 border-t border-[#D4AF37]/30">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-15 pointer-events-none"
           style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
         />
 
         <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
-          
+
           {/* Left: Founder Photo & Quote */}
           <div className="lg:col-span-7 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
             <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#C5A059]/40 flex-shrink-0">
-              <img 
-                src="/blanca-founder.png" 
-                alt="Blanca - Founder & Creative Director" 
-                className="w-full h-full object-cover scale-105"
+              <img
+                src="/blancosevents-image-home/home img2.webp"
+                alt="Blanca - Founder & Creative Director"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="flex-grow">
@@ -420,7 +420,7 @@ export const ContactPageContent: React.FC = () => {
             <p className="text-xs text-neutral-300 font-light mb-4">
               Let&apos;s bring your vision to life.
             </p>
-            <a 
+            <a
               href="#enquiry-form"
               className="bg-[#C5A059] hover:bg-[#B89230] text-white px-6 py-3.5 text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300 flex items-center gap-2 shadow-lg whitespace-nowrap"
             >

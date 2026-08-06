@@ -31,7 +31,7 @@ export const TestimonialsPageContent: React.FC = () => {
       quote: 'They brought our brand vision to life in the most spectacular way. The event was a huge success and we received amazing feedback from our guests.',
       image: '/portfolio-images/Corporate Events.webp',
       avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop',
-      videoUrl: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ',
+      videoUrl: 'https://www.youtube-nocookisde.com/embed/dQw4w9WgXcQ2',
     },
     {
       id: 4,
@@ -294,7 +294,7 @@ export const TestimonialsPageContent: React.FC = () => {
             {/* Edge fade gradient overlays */}
             <div className="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
             <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
-            
+
             <div className="animate-marquee space-x-12 sm:space-x-20 items-center py-2">
               {[...brands, ...brands].map((brand, index) => (
                 <div
