@@ -125,10 +125,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
               href="https://wa.me/971501234567"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center space-x-1.5 px-3 py-1.5 border border-[#C5A059]/80 rounded-full text-white bg-black/80 hover:border-[#D4AF37] hover:bg-[#C5A059]/10 transition-all duration-300 shadow-md group"
+              className="flex items-center space-x-1.5 px-3 py-1.5 xl:px-5 xl:py-2 border border-[#C5A059]/80 rounded-full text-white bg-black/80 hover:border-[#D4AF37] hover:bg-[#C5A059]/10 transition-all duration-300 shadow-md group animate-gold-pulse hover:scale-105"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-[#C5A059] group-hover:text-[#D4AF37] transition-colors" />
-              <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-white">
+              <MessageCircle className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-[#C5A059] group-hover:text-[#D4AF37] transition-all duration-300 group-hover:rotate-6" />
+              <span className="text-[10px] xl:text-[11px] font-semibold tracking-[0.18em] uppercase text-white">
                 WHATSAPP
               </span>
             </a>
