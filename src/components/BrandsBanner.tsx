@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 export const BrandsBanner: React.FC = () => {
   const brands = [
-    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/1.webp' },
-    { name: 'Jumeirah', logo: '/blancosevents-image-home/icons/2.webp' },
-    { name: 'FIVE', logo: '/blancosevents-image-home/icons/3.webp' },
-    { name: 'LUX', logo: '/blancosevents-image-home/icons/4.webp' },
-    { name: 'SLS', logo: '/blancosevents-image-home/icons/5.webp' },
-    { name: 'NOBU', logo: '/blancosevents-image-home/icons/6.webp' },
-    { name: 'EMAAR', logo: '/blancosevents-image-home/icons/7.webp' },
-    { name: 'W', logo: '/blancosevents-image-home/icons/8.webp' },
+    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/Atlantis.webp' },
+    { name: 'Jumeirah', logo: '/blancosevents-image-home/icons/jumeira.webp' },
+    { name: 'FIVE', logo: '/blancosevents-image-home/icons/five.webp' },
+    { name: 'LUX', logo: '/blancosevents-image-home/icons/lux.webp' },
+    { name: 'SLS', logo: '/blancosevents-image-home/icons/sls.webp' },
+    { name: 'NOBU', logo: '/blancosevents-image-home/icons/nobu.webp' },
+    { name: 'EMAAR', logo: '/blancosevents-image-home/icons/emaar.webp' },
+    { name: 'W', logo: '/blancosevents-image-home/icons/W.webp' },
   ];
 
   return (
