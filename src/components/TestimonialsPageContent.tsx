@@ -229,31 +229,35 @@ export const TestimonialsPageContent: React.FC = () => {
                     </div>
 
                     {/* Card Content Bottom half */}
-                    <div className="p-6 bg-[#FCFAF7] flex flex-col flex-grow items-center text-center space-y-4">
-                      {/* Golden Custom Double Quotes */}
-                      <span className="text-4xl font-serif text-[#B89052]/80 leading-none">“</span>
+                    <div className="p-5 bg-[#FCFAF7] flex flex-col flex-grow justify-between space-y-4 text-left items-start">
+                      <div className="flex flex-col items-start text-left space-y-1 w-full">
+                        {/* Golden Custom Double Quotes */}
+                        <span className="text-3xl font-serif text-[#B89052]/80 leading-none select-none -ml-2.5 block">“</span>
 
-                      {/* Quote Text */}
-                      <p className="text-[13px] text-[#444444] leading-relaxed font-normal flex-grow max-w-[280px]">
-                        {item.quote}
-                      </p>
+                        {/* Quote Text */}
+                        <p className="text-[13px] text-[#444444] leading-relaxed font-normal text-left w-full">
+                          {item.quote}
+                        </p>
+                      </div>
 
-                      {/* Line Separator */}
-                      <div className="w-12 h-[1px] bg-[#E8DFC5]/60 my-2" />
+                      {/* Divider Line */}
+                      <div className="w-full h-[1px] bg-[#E8DFC5]/45" />
 
                       {/* User Profile */}
-                      <div className="flex flex-col items-center">
+                      <div className="flex items-center space-x-3.5 w-full">
                         <img
                           src={item.avatar}
                           alt={item.name}
-                          className="w-11 h-11 rounded-full object-cover border border-[#B89052]/40"
+                          className="w-10 h-10 rounded-full object-cover border border-[#B89052]/40 flex-shrink-0"
                         />
-                        <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B89052] uppercase mt-2">
-                          {item.name}
-                        </h4>
-                        <p className="text-[10px] text-[#666666] font-medium leading-tight mt-0.5">
-                          {item.desc}
-                        </p>
+                        <div className="flex flex-col min-w-0">
+                          <h4 className="text-[10.5px] font-bold tracking-[0.12em] text-[#B89052] uppercase leading-tight truncate">
+                            {item.name}
+                          </h4>
+                          <p className="text-[9.5px] text-[#666666] font-normal leading-snug mt-0.5">
+                            {item.desc}
+                          </p>
+                        </div>
                       </div>
                     </div>
 
