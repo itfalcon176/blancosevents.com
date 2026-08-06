@@ -162,7 +162,7 @@ export const PortfolioPageContent: React.FC = () => {
           </div>
 
           {/* ── Category Filter Tabs ── */}
-          <div className="sticky top-[52px] z-40 bg-[#FAF8F5] py-3 sm:py-4 -mx-5 sm:-mx-10 lg:-mx-12 px-5 sm:px-10 lg:px-12 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-shadow">
+          <div className="sticky top-[75px] z-40 bg-[#FAF8F5] py-3 sm:py-4 -mx-5 sm:-mx-10 lg:-mx-12 px-5 sm:px-10 lg:px-12 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.08)] transition-shadow">
             <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-1 scrollbar-hide justify-start sm:justify-center">
               {categories.map((cat) => (
                 <button

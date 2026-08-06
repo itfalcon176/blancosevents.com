@@ -82,8 +82,8 @@ export const TestimonialsPageContent: React.FC = () => {
 
   const brands = [
     { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/Atlantis.webp' },
-    { name: 'ADDRESS', logo: '/blancosevents-image-home/icons/4.webp' },
-    { name: 'RIXOS', logo: '/blancosevents-image-home/icons/5.webp' },
+    { name: 'ADDRESS', logo: '/blancosevents-image-home/icons/address.webp' },
+    { name: 'RIXOS', logo: '/blancosevents-image-home/icons/rixos.webp' },
     { name: 'JUMEIRAH', logo: '/blancosevents-image-home/icons/jumeira.webp' },
     { name: 'FIVE', logo: '/blancosevents-image-home/icons/five.webp' },
     { name: 'EMAAR', logo: '/blancosevents-image-home/icons/emaar.webp' },
