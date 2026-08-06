@@ -199,64 +199,67 @@ export const TestimonialsPageContent: React.FC = () => {
           </button>
 
           {/* Cards Area */}
-          <div className="w-full px-12 lg:px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch justify-center">
-              {visibleTestimonials.map((item) => (
-                <motion.div
+          <div className="w-full overflow-hidden px-12 lg:px-4">
+            <div 
+              className="flex transition-transform duration-500 ease-out -mx-3"
+              style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
+            >
+              {testimonials.map((item) => (
+                <div
                   key={item.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4 }}
-                  className="bg-white border border-[#E8DFC5]/60 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col h-full rounded-sm overflow-hidden group hover:border-[#B89052]/60 hover:shadow-lg transition-all duration-300"
+                  className="w-full sm:w-1/2 lg:w-1/4 flex-shrink-0 px-3 flex"
                 >
-                  {/* Card Thumbnail Top half */}
-                  <div 
-                    onClick={() => setSelectedVideo(item.videoUrl)}
-                    className="relative h-52 w-full overflow-hidden bg-neutral-900 cursor-pointer"
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 brightness-95"
-                    />
-                    {/* Dark gradient overlay & Play Button */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/25 opacity-90 group-hover:bg-black/40 transition-colors duration-300">
-                      <div className="w-12 h-12 rounded-full border border-white/40 bg-black/60 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                        <Play className="w-4 h-4 text-white fill-white ml-0.5" />
+                  <div className="bg-white border border-[#E8DFC5]/60 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col w-full rounded-sm overflow-hidden group hover:border-[#B89052]/60 hover:shadow-lg transition-all duration-300">
+                    
+                    {/* Card Thumbnail Top half */}
+                    <div 
+                      onClick={() => setSelectedVideo(item.videoUrl)}
+                      className="relative h-52 w-full overflow-hidden bg-neutral-900 cursor-pointer"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 brightness-95"
+                      />
+                      {/* Dark gradient overlay & Play Button */}
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/25 opacity-90 group-hover:bg-black/40 transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-full border border-white/40 bg-black/60 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                          <Play className="w-4 h-4 text-white fill-white ml-0.5" />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Card Content Bottom half */}
-                  <div className="p-6 bg-[#FCFAF7] flex flex-col flex-grow items-center text-center space-y-4">
-                    {/* Golden Custom Double Quotes */}
-                    <span className="text-4xl font-serif text-[#B89052]/80 leading-none">“</span>
+                    {/* Card Content Bottom half */}
+                    <div className="p-6 bg-[#FCFAF7] flex flex-col flex-grow items-center text-center space-y-4">
+                      {/* Golden Custom Double Quotes */}
+                      <span className="text-4xl font-serif text-[#B89052]/80 leading-none">“</span>
 
-                    {/* Quote Text */}
-                    <p className="text-[13px] text-[#444444] leading-relaxed font-normal flex-grow max-w-[280px]">
-                      {item.quote}
-                    </p>
-
-                    {/* Line Separator */}
-                    <div className="w-12 h-[1px] bg-[#E8DFC5]/60 my-2" />
-
-                    {/* User Profile */}
-                    <div className="flex flex-col items-center">
-                      <img
-                        src={item.avatar}
-                        alt={item.name}
-                        className="w-11 h-11 rounded-full object-cover border border-[#B89052]/40"
-                      />
-                      <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B89052] uppercase mt-2">
-                        {item.name}
-                      </h4>
-                      <p className="text-[10px] text-[#666666] font-medium leading-tight mt-0.5">
-                        {item.desc}
+                      {/* Quote Text */}
+                      <p className="text-[13px] text-[#444444] leading-relaxed font-normal flex-grow max-w-[280px]">
+                        {item.quote}
                       </p>
+
+                      {/* Line Separator */}
+                      <div className="w-12 h-[1px] bg-[#E8DFC5]/60 my-2" />
+
+                      {/* User Profile */}
+                      <div className="flex flex-col items-center">
+                        <img
+                          src={item.avatar}
+                          alt={item.name}
+                          className="w-11 h-11 rounded-full object-cover border border-[#B89052]/40"
+                        />
+                        <h4 className="text-[11px] font-bold tracking-[0.15em] text-[#B89052] uppercase mt-2">
+                          {item.name}
+                        </h4>
+                        <p className="text-[10px] text-[#666666] font-medium leading-tight mt-0.5">
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
+
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
