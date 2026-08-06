@@ -81,14 +81,14 @@ export const TestimonialsPageContent: React.FC = () => {
   ];
 
   const brands = [
-    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/1.webp' },
+    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/Atlantis.webp' },
     { name: 'ADDRESS', logo: '/blancosevents-image-home/icons/4.webp' },
     { name: 'RIXOS', logo: '/blancosevents-image-home/icons/5.webp' },
-    { name: 'JUMEIRAH', logo: '/blancosevents-image-home/icons/2.webp' },
-    { name: 'FIVE', logo: '/blancosevents-image-home/icons/3.webp' },
-    { name: 'EMAAR', logo: '/blancosevents-image-home/icons/7.webp' },
-    { name: 'NOBU', logo: '/blancosevents-image-home/icons/6.webp' },
-    { name: 'W HOTELS', logo: '/blancosevents-image-home/icons/8.webp' },
+    { name: 'JUMEIRAH', logo: '/blancosevents-image-home/icons/jumeira.webp' },
+    { name: 'FIVE', logo: '/blancosevents-image-home/icons/five.webp' },
+    { name: 'EMAAR', logo: '/blancosevents-image-home/icons/emaar.webp' },
+    { name: 'NOBU', logo: '/blancosevents-image-home/icons/nobu.webp' },
+    { name: 'W HOTELS', logo: '/blancosevents-image-home/icons/W.webp' },
   ];
 
   const stats = [
@@ -191,16 +191,15 @@ export const TestimonialsPageContent: React.FC = () => {
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            className={`absolute left-0 lg:-left-6 z-10 w-11 h-11 rounded-full border border-[#B89052]/40 bg-white flex items-center justify-center text-[#B89052] transition-all duration-300 ${
-              currentIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-[#FAF8F5] hover:scale-105 shadow-md'
-            }`}
+            className={`absolute left-0 lg:-left-6 z-10 w-11 h-11 rounded-full border border-[#B89052]/40 bg-white flex items-center justify-center text-[#B89052] transition-all duration-300 ${currentIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-[#FAF8F5] hover:scale-105 shadow-md'
+              }`}
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
 
           {/* Cards Area */}
           <div className="w-full overflow-hidden px-12 lg:px-4">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-out -mx-3"
               style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
             >
@@ -210,9 +209,9 @@ export const TestimonialsPageContent: React.FC = () => {
                   className="w-full sm:w-1/2 lg:w-1/4 flex-shrink-0 px-3 flex"
                 >
                   <div className="bg-white border border-[#E8DFC5]/60 shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col w-full rounded-sm overflow-hidden group hover:border-[#B89052]/60 hover:shadow-lg transition-all duration-300">
-                    
+
                     {/* Card Thumbnail Top half */}
-                    <div 
+                    <div
                       onClick={() => setSelectedVideo(item.videoUrl)}
                       className="relative h-52 w-full overflow-hidden bg-neutral-900 cursor-pointer"
                     >
@@ -268,9 +267,8 @@ export const TestimonialsPageContent: React.FC = () => {
           <button
             onClick={handleNext}
             disabled={currentIndex >= maxIndex}
-            className={`absolute right-0 lg:-right-6 z-10 w-11 h-11 rounded-full border border-[#B89052]/40 bg-white flex items-center justify-center text-[#B89052] transition-all duration-300 ${
-              currentIndex >= maxIndex ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-[#FAF8F5] hover:scale-105 shadow-md'
-            }`}
+            className={`absolute right-0 lg:-right-6 z-10 w-11 h-11 rounded-full border border-[#B89052]/40 bg-white flex items-center justify-center text-[#B89052] transition-all duration-300 ${currentIndex >= maxIndex ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-[#FAF8F5] hover:scale-105 shadow-md'
+              }`}
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -373,7 +371,7 @@ export const TestimonialsPageContent: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center gap-8 flex-shrink-0 w-full md:w-auto">
             {/* Vertical Divider (desktop only) */}
             <div className="hidden md:block w-[1px] h-14 bg-[#C5A059]/25 self-center" />
-            
+
             {/* Center Content */}
             <div className="text-left font-sans text-sm lg:text-[15px] leading-relaxed text-neutral-300">
               <p className="text-white font-semibold mb-0.5">Let's bring your vision to life.</p>
