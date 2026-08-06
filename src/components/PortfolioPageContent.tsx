@@ -226,7 +226,7 @@ export const PortfolioPageContent: React.FC = () => {
           {/* ── View Full Portfolio CTA ── */}
           <div className="flex justify-center mt-12 sm:mt-14">
             <a
-              href="#contact"
+              href="/contact"
               className="group inline-flex items-center px-7 py-3 border border-neutral-400 text-neutral-700 hover:border-[#C5A059] hover:text-[#C5A059] transition-all duration-300 text-[11px] font-semibold tracking-[0.2em] uppercase rounded-sm"
             >
               <span>VIEW FULL PORTFOLIO</span>

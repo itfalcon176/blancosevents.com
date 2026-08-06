@@ -80,7 +80,7 @@ export const WhyChooseUsSection: React.FC = () => {
               Through our trusted network of elite vendors, we offer bespoke services and thoughtful add-ons that elevate your event experience.
             </p>
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center px-6 py-3.5 bg-black text-[#C5A059] hover:bg-neutral-900 hover:text-[#D4AF37] transition-colors rounded-sm text-xs font-semibold tracking-[0.2em] uppercase shadow-lg group"
             >
               <span>DISCOVER MORE</span>

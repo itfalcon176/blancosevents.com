@@ -84,10 +84,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 QUICK LINKS
               </h4>
               <ul className="space-y-2 text-[11.5px] text-neutral-300 font-light">
-                <li><a href="/" className="hover:text-[#D4AF37] transition-colors">Home</a></li>
-                <li><a href="/about" className="hover:text-[#D4AF37] transition-colors">About Us</a></li>
-                <li><a href="/#services" className="hover:text-[#D4AF37] transition-colors">Services</a></li>
-                <li><a href="/portfolio" className="hover:text-[#D4AF37] transition-colors">Portfolio</a></li>
+                <li><Link href="/" className="hover:text-[#D4AF37] transition-colors">Home</Link></li>
+                <li><Link href="/about" className="hover:text-[#D4AF37] transition-colors">About Us</Link></li>
+                <li><Link href="/services" className="hover:text-[#D4AF37] transition-colors">Services</Link></li>
+                <li><Link href="/portfolio" className="hover:text-[#D4AF37] transition-colors">Portfolio</Link></li>
                 <li><Link href="/contact" className="hover:text-[#D4AF37] transition-colors">Contact Us</Link></li>
               </ul>
             </div>
@@ -100,10 +100,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 SERVICES
               </h4>
               <ul className="space-y-2 text-[11.5px] text-neutral-300 font-light">
-                <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Weddings</a></li>
-                <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Private Celebrations</a></li>
-                <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Corporate Events</a></li>
-                <li><a href="#services" className="hover:text-[#D4AF37] transition-colors">Venue Management</a></li>
+                <li><Link href="/services/weddings-engagements" className="hover:text-[#D4AF37] transition-colors">Weddings</Link></li>
+                <li><Link href="/services/private-celebrations" className="hover:text-[#D4AF37] transition-colors">Private Celebrations</Link></li>
+                <li><Link href="/services/corporate-brand-events" className="hover:text-[#D4AF37] transition-colors">Corporate Events</Link></li>
+                <li><Link href="/services/hotels-restaurants-venues" className="hover:text-[#D4AF37] transition-colors">Venue Management</Link></li>
               </ul>
             </div>
           </div>
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 USEFUL LINKS
               </h4>
               <ul className="space-y-2 text-[11.5px] text-neutral-300 font-light">
-                <li><a href="#blog" className="hover:text-[#D4AF37] transition-colors">Blog</a></li>
+                <li><Link href="/#blog" className="hover:text-[#D4AF37] transition-colors">Blog</Link></li>
                 <li><Link href="/testimonials" className="hover:text-[#D4AF37] transition-colors">Testimonials</Link></li>
                 <li><Link href="/terms" className="hover:text-[#D4AF37] transition-colors">Terms & Conditions</Link></li>
                 <li><Link href="/privacy" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</Link></li>

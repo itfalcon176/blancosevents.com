@@ -91,6 +91,7 @@ export const ServicesSection: React.FC = () => {
         'Timeless moments, elegant design and flawless execution for your most precious celebrations.',
       image: '/blancosevents-image-home/wedding.webp',
       iconElement: <LuxuryWeddingRingsIcon className="w-7 h-7" />,
+      href: '/services/weddings-engagements',
     },
     {
       id: 'private',
@@ -99,6 +100,7 @@ export const ServicesSection: React.FC = () => {
         'Birthdays, anniversaries, proposals & intimate gatherings made truly unforgettable.',
       image: '/blancosevents-image-home/private.webp',
       iconElement: <LuxuryCakeIcon className="w-7 h-7" />,
+      href: '/services/private-celebrations',
     },
     {
       id: 'corporate',
@@ -107,6 +109,7 @@ export const ServicesSection: React.FC = () => {
         'Polished, impactful, and creative events that elevate your brand.',
       image: '/blancosevents-image-home/coorporate.webp',
       iconElement: <LuxuryBuildingIcon className="w-7 h-7" />,
+      href: '/services/corporate-brand-events',
     },
     {
       id: 'venues',
@@ -115,6 +118,7 @@ export const ServicesSection: React.FC = () => {
         'Curating & managing exceptional events in stunning spaces.',
       image: '/blancosevents-image-home/hotel.webp',
       iconElement: <LuxuryClocheIcon className="w-7 h-7" />,
+      href: '/services/hotels-restaurants-venues',
     },
   ];
 
@@ -171,7 +175,7 @@ export const ServicesSection: React.FC = () => {
 
                 {/* Discover More Link */}
                 <a
-                  href="#contact"
+                  href={service.href}
                   className="inline-flex items-center text-[10.5px] font-bold tracking-[0.22em] text-[#C5A059] hover:text-[#F3E5AB] transition-colors uppercase group/link"
                 >
                   <span>DISCOVER MORE</span>
