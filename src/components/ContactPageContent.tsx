@@ -377,17 +377,17 @@ export const ContactPageContent: React.FC = () => {
       {/* ──────────────────────────────────────────────────────── */}
       {/* BOTTOM SECTION: Founder Quote & Call to Action           */}
       {/* ──────────────────────────────────────────────────────── */}
-      <section className="relative w-full bg-[#08080A] text-white py-12 px-6 sm:px-10 lg:px-12 border-t border-[#D4AF37]/30">
+      <section className="relative w-full bg-[#08080A] text-white py-7 px-6 sm:px-10 lg:px-12 border-t border-[#D4AF37]/30">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-15 pointer-events-none"
           style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
         />
 
-        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           
           {/* Left: Founder Photo & Quote */}
-          <div className="lg:col-span-7 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-[#C5A059]/40 flex-shrink-0">
+          <div className="lg:col-span-7 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#C5A059]/40 flex-shrink-0">
               <img 
                 src="/blanca-founder.png" 
                 alt="Blanca - Founder & Creative Director" 
@@ -395,13 +395,13 @@ export const ContactPageContent: React.FC = () => {
               />
             </div>
             <div className="flex-grow">
-              <span className="text-[#C5A059] font-serif text-5xl leading-none block -mb-4 opacity-50 sm:text-left select-none">“</span>
-              <blockquote className="text-lg sm:text-xl font-serif text-neutral-200 font-light leading-relaxed mb-2 px-1 sm:px-0">
+              <span className="text-[#C5A059] font-serif text-4xl leading-none block -mb-3 opacity-50 sm:text-left select-none">“</span>
+              <blockquote className="text-md sm:text-lg font-serif text-neutral-200 font-light leading-relaxed mb-1 px-1 sm:px-0">
                 Every unforgettable <br className="hidden sm:inline" />
                 event starts with <br className="hidden sm:inline" />
                 a <span className="text-[#C5A059] font-serif">conversation.</span>
               </blockquote>
-              <cite className="text-xs tracking-widest text-neutral-400 not-italic uppercase font-semibold">
+              <cite className="text-[10px] tracking-widest text-neutral-400 not-italic uppercase font-semibold">
                 — Blanca 🤍
               </cite>
             </div>
@@ -409,20 +409,20 @@ export const ContactPageContent: React.FC = () => {
 
           {/* Vertical Separator Line (Desktop only) */}
           <div className="hidden lg:block lg:col-span-1 justify-self-center">
-            <div className="w-[1px] h-28 bg-[#C5A059]/20" />
+            <div className="w-[1px] h-20 bg-[#C5A059]/20" />
           </div>
 
           {/* Right: Book Consultation Block */}
           <div className="lg:col-span-4 text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
-            <span className="text-[10px] font-bold tracking-[0.25em] text-[#C5A059] uppercase mb-2">
+            <span className="text-[10px] font-bold tracking-[0.25em] text-[#C5A059] uppercase mb-1.5">
               READY TO START PLANNING?
             </span>
-            <p className="text-sm text-neutral-300 font-light mb-5">
+            <p className="text-xs text-neutral-300 font-light mb-4">
               Let&apos;s bring your vision to life.
             </p>
             <a 
               href="#enquiry-form"
-              className="bg-[#C5A059] hover:bg-[#B89230] text-white px-7 py-4 text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300 flex items-center gap-2 shadow-lg whitespace-nowrap"
+              className="bg-[#C5A059] hover:bg-[#B89230] text-white px-6 py-3.5 text-xs font-bold tracking-[0.25em] uppercase transition-all duration-300 flex items-center gap-2 shadow-lg whitespace-nowrap"
             >
               <span>BOOK A CONSULTATION</span>
               <ArrowRight className="w-4 h-4" />
