@@ -11,7 +11,7 @@ export default function TestimonialsPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#08080A] text-white pt-16">
+    <main className="min-h-screen bg-[#08080A] text-white pt-[75px]">
       <Navbar onOpenInquiryModal={handleOpenInquiry} />
       <TestimonialsPageContent />
       <Footer onOpenInquiry={handleOpenInquiry} />

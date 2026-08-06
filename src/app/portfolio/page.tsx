@@ -11,7 +11,7 @@ export default function PortfolioPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#08080A] text-white pt-16">
+    <main className="min-h-screen bg-[#08080A] text-white pt-[75px]">
       <Navbar onOpenInquiryModal={handleOpenInquiry} />
       <PortfolioPageContent />
       <Footer onOpenInquiry={handleOpenInquiry} />
