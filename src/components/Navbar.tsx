@@ -137,7 +137,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Menu"
-              className="p-1.5 text-white hover:text-[#D4AF37] transition-colors"
+              className="p-1.5 text-white hover:text-[#D4AF37] transition-colors xl:hidden"
             >
               <Menu className="w-6 h-6" />
             </button>
