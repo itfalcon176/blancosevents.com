@@ -112,7 +112,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
       </div>
 
       {/* Bottom Right Watch Our Reel Button */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -125,7 +125,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
         <span className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/90 group-hover:text-[#D4AF37] transition-colors">
           WATCH OUR REEL
         </span>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

@@ -115,7 +115,7 @@ export const PortfolioPageContent: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — HERO + FILTER TABS + GRID
           ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-[#FAF8F5] pt-24 pb-16 sm:pt-28 sm:pb-20">
+      <section className="bg-[#FAF8F5] pt-[30px] pb-16 sm:pb-20">
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-12">
           {/* ── Hero Header ── */}
           <div className="text-center mb-10 sm:mb-14">

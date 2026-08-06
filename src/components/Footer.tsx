@@ -116,8 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
               </h4>
               <ul className="space-y-2 text-[11.5px] text-neutral-300 font-light">
                 <li><a href="#blog" className="hover:text-[#D4AF37] transition-colors">Blog</a></li>
-                <li><a href="#casestudies" className="hover:text-[#D4AF37] transition-colors">Case Studies</a></li>
-                <li><a href="#testimonials" className="hover:text-[#D4AF37] transition-colors">Testimonials</a></li>
+                <li><Link href="/testimonials" className="hover:text-[#D4AF37] transition-colors">Testimonials</Link></li>
                 <li><a href="#privacy" className="hover:text-[#D4AF37] transition-colors">Terms & Conditions</a></li>
                 <li><a href="#privacy" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</a></li>
               </ul>

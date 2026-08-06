@@ -155,7 +155,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       {/* ---------------------------------------------------- */}
       {/* SECTION 1: Services Header & 4 Cards Grid            */}
       {/* ---------------------------------------------------- */}
-      <section id="services" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-[1550px] mx-auto">
+      <section id="services" className="pt-[30px] pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 max-w-[1550px] mx-auto">
         {/* Decorative Top Subheader */}
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-3.5 mb-2.5">
@@ -247,9 +247,9 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       {/* SECTION 2: Exclusive Add-Ons Banner                 */}
       {/* ---------------------------------------------------- */}
       <section className="bg-[#FAF3EA] border-y border-[#E8DFC5]/80 py-10 px-4 sm:px-6 lg:px-10 w-full">
-        <div className="max-w-[1550px] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-10 items-stretch">
+        <div className="max-w-[1550px] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-0 items-stretch">
           {/* Left Column: Title & Action Button */}
-          <div className="lg:w-[28%] flex flex-col justify-center items-start text-left pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-[#E8DFC5] pb-6 lg:pb-0">
+          <div className="lg:w-[28%] flex flex-col justify-center items-start text-left pr-0 lg:pr-8 border-b lg:border-b-0 lg:border-r border-[#E8DFC5] pb-6 lg:pb-0">
             <span className="text-[11px] font-bold tracking-[0.25em] text-[#B88E3E] uppercase mb-1">
               EXCLUSIVE ADD-ONS
             </span>
@@ -274,7 +274,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
             {addOns.map((item, idx) => {
               const AddOnIcon = item.icon;
               return (
-                <div key={idx} className="flex flex-col items-center justify-start px-2 py-4 space-y-2 text-center h-full">
+                <div key={idx} className="flex flex-col items-center justify-center px-2 py-4 space-y-2 text-center h-full">
                   {/* Icon Badge */}
                   <div className="w-11 h-11 rounded-full bg-[#F3EAD9] flex items-center justify-center text-[#B89052] mb-1 flex-shrink-0">
                     <AddOnIcon className="w-[28px] h-[28px]" strokeWidth={1.5} />
