@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
                 USEFUL LINKS
               </h4>
               <ul className="space-y-2 text-[11.5px] text-neutral-300 font-light">
-                <li><Link href="/#blog" className="hover:text-[#D4AF37] transition-colors">Blog</Link></li>
+                <li><Link href="/blog" className="hover:text-[#D4AF37] transition-colors">Blog</Link></li>
                 <li><Link href="/testimonials" className="hover:text-[#D4AF37] transition-colors">Testimonials</Link></li>
                 <li><Link href="/terms" className="hover:text-[#D4AF37] transition-colors">Terms & Conditions</Link></li>
                 <li><Link href="/privacy" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</Link></li>
