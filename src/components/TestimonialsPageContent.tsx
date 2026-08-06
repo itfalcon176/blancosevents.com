@@ -232,7 +232,7 @@ export const TestimonialsPageContent: React.FC = () => {
                     <div className="p-5 bg-[#FCFAF7] flex flex-col flex-grow justify-between space-y-4 text-left items-start">
                       <div className="flex flex-col items-start text-left space-y-1 w-full">
                         {/* Golden Custom Double Quotes */}
-                        <span className="text-3xl font-serif text-[#B89052]/80 leading-none select-none -ml-2.5 block">“</span>
+                        <span className="text-[46px] font-serif text-[#B89052]/85 leading-none select-none -ml-3.5 block h-7 mb-2">“</span>
 
                         {/* Quote Text */}
                         <p className="text-[13px] text-[#444444] leading-relaxed font-normal text-left w-full">
