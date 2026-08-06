@@ -91,7 +91,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel, onOpenInqu
             </button>
 
             {/* Bottom Row Buttons: OUR SERVICES & VIEW OUR WORK */}
-            <div className="grid grid-cols-2 gap-3.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <a
                 href="#services"
                 className="flex items-center justify-between px-5 py-3.5 bg-[#C5A059] hover:bg-[#D4AF37] text-black transition-all duration-300 rounded-sm text-xs font-bold tracking-[0.15em] uppercase shadow-xl group"
