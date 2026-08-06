@@ -34,10 +34,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
       active: pathname === '/services',
       hasDropdown: true,
       items: [
-        'Weddings & Engagements',
-        'Private Celebrations',
-        'Corporate & Brand Events',
-        'Hotels, Restaurants & Venues',
+        { name: 'Weddings & Engagements', href: '/services/weddings-engagements' },
+        { name: 'Private Celebrations', href: '/services/private-celebrations' },
+        { name: 'Corporate & Brand Events', href: '/services/corporate-brand-events' },
+        { name: 'Hotels, Restaurants & Venues', href: '/services/hotels-restaurants-venues' },
       ],
     },
     { name: 'PORTFOLIO', href: '/portfolio', active: pathname === '/portfolio' },
@@ -102,13 +102,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenInquiryModal }) => {
                         className="absolute top-full left-0 w-60 bg-[#0F0F12] border border-[#D4AF37]/30 shadow-2xl rounded-sm py-2 px-1 backdrop-blur-xl"
                       >
                         {link.items?.map((item) => (
-                          <a
-                            key={item}
-                            href="#services"
+                          <Link
+                            key={typeof item === 'string' ? item : item.name}
+                            href={typeof item === 'string' ? '#services' : item.href}
                             className="block px-4 py-2 text-[11px] text-neutral-300 hover:text-[#D4AF37] hover:bg-[#1A1A22] transition-colors rounded-sm"
                           >
-                            {item}
-                          </a>
+                            {typeof item === 'string' ? item : item.name}
+                          </Link>
                         ))}
                       </motion.div>
                     )}

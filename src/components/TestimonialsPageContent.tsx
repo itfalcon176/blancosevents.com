@@ -289,8 +289,8 @@ export const TestimonialsPageContent: React.FC = () => {
             <span className="h-[1px] w-14 sm:w-20 bg-[#B88E3E]/50"></span>
           </div>
 
-          {/* Logos Row */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6 items-center justify-between text-center">
+          {/* Logos Row - Desktop */}
+          <div className="hidden sm:grid sm:grid-cols-4 lg:grid-cols-8 gap-6 items-center justify-between text-center">
             {brands.map((brand, index) => (
               <motion.div
                 key={index}
@@ -307,6 +307,27 @@ export const TestimonialsPageContent: React.FC = () => {
                 />
               </motion.div>
             ))}
+          </div>
+
+          {/* Logos Row - Mobile Infinite Scroll Marquee */}
+          <div className="block sm:hidden relative w-full overflow-hidden py-1">
+            <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
+            
+            <div className="animate-marquee space-x-12 items-center py-2">
+              {[...brands, ...brands].map((brand, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 flex items-center justify-center w-28"
+                >
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    className="h-9 object-contain filter brightness-95"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

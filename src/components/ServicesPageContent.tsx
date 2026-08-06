@@ -108,7 +108,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       image: '/blancosevents-image-home/wedding.webp',
       icon: LuxuryWeddingRingsIcon,
       buttonText: 'EXPLORE WEDDINGS',
-      href: '/#contact',
+      href: '/services/weddings-engagements',
     },
     {
       id: 'private',
@@ -117,7 +117,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       image: '/blancosevents-image-home/private.webp',
       icon: LuxuryCakeIcon,
       buttonText: 'EXPLORE CELEBRATIONS',
-      href: '/#contact',
+      href: '/services/private-celebrations',
     },
     {
       id: 'corporate',
@@ -126,7 +126,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       image: '/blancosevents-image-home/coorporate.webp',
       icon: LuxuryBuildingIcon,
       buttonText: 'EXPLORE CORPORATE',
-      href: '/#contact',
+      href: '/services/corporate-brand-events',
     },
     {
       id: 'venues',
@@ -135,7 +135,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
       image: '/blancosevents-image-home/hotel.webp',
       icon: LuxuryClocheIcon,
       buttonText: 'EXPLORE HOSPITALITY',
-      href: '/#contact',
+      href: '/services/hotels-restaurants-venues',
     },
   ];
 
