@@ -46,10 +46,17 @@ export const EventInquirySection: React.FC = () => {
     <section id="contact" className="relative w-full bg-black text-white py-16 lg:py-20 border-t border-white/10 overflow-hidden">
       {/* Crystal Clear Full-Height Background Image on Left Edge */}
       <div className="absolute inset-y-0 left-0 w-full md:w-[42%] lg:w-[35%] z-0">
+        {/* Mobile Background: Black Rose */}
+        <img
+          src="/dark-rose-bg.png"
+          alt="Dark Rose Background"
+          className="block md:hidden w-full h-full object-cover"
+        />
+        {/* Desktop/Tablet Background: Lady */}
         <img
           src="/blancosevents-image-home/home img2.webp"
           alt="Luxury Event Planning Director"
-          className="w-full h-full object-cover object-top filter brightness-110 contrast-110"
+          className="hidden md:block w-full h-full object-cover object-top filter brightness-110 contrast-110"
         />
         {/* Soft Right Gradient Fade that preserves her face and gold watch crystal clear */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/40 to-black" />
