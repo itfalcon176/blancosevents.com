@@ -24,7 +24,7 @@ export const BlogPageContent: React.FC = () => {
             THE JOURNAL
           </span>
           <h1 className="text-4xl sm:text-5xl font-serif tracking-tight leading-tight">
-            Editorials & <span className="text-[#C5A059] italic">Inspirations</span>
+            Editorials & <span className="text-[#C5A059]">Inspirations</span>
           </h1>
           <p className="text-xs sm:text-sm text-neutral-400 font-light max-w-lg mx-auto leading-relaxed">
             Curated articles, professional checklists, and design insights on planning luxury occasions in Dubai and beyond.
