@@ -325,7 +325,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
 
           {/* Right Action Button */}
           <button
-            onClick={onOpenInquiryModal || (() => { window.location.href = '/#contact'; })}
+            onClick={onOpenInquiryModal || (() => { window.location.href = '/contact'; })}
             className="bg-[#C5A059] hover:bg-[#D4AF37] text-black px-6 py-3 text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 flex items-center gap-2 shadow-lg whitespace-nowrap"
           >
             <span>TELL US YOUR VISION</span>
