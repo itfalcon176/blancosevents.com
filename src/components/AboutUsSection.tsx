@@ -314,7 +314,7 @@ export const AboutUsSection: React.FC = () => {
           >
             <div className="relative aspect-[4/5] w-full rounded-[32px] overflow-hidden shadow-xl border-4 border-[#FAF3EA]">
               <Image
-                src="/blanca-founder.png"
+                src="/about-us-image/mob-about.webp"
                 alt="Blanca - Founder & Creative Director"
                 fill
                 className="object-cover object-top"
@@ -322,6 +322,17 @@ export const AboutUsSection: React.FC = () => {
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+
+              {/* Elegant Luxury Badge overlay inside the image bottom-left */}
+              <div className="absolute bottom-4 left-4 bg-black/75 backdrop-blur-md border border-[#B88E3E]/40 px-2.5 py-1 rounded-full flex items-center gap-1.5 z-20">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C5A059] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#C5A059]"></span>
+                </span>
+                <span className="text-[8px] font-bold tracking-[0.25em] text-[#C5A059] uppercase animate-pulse">
+                  FOUNDER
+                </span>
+              </div>
             </div>
           </motion.div>
 
