@@ -10,7 +10,7 @@ export const TestimonialsPageContent: React.FC = () => {
       id: 1,
       name: 'SOPHIA & MICHAEL',
       desc: 'Wedding at Atlantis The Royal',
-      quote: "Blanca's Events turned our wedding into a fairytale. Every detail was more beautiful than we could have imagined. Our guests are still talking about it!",
+      quote: "Blanco's Events turned our wedding into a fairytale. Every detail was more beautiful than we could have imagined. Our guests are still talking about it!",
       image: '/portfolio-images/Luxury Weddings.webp',
       avatar: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=200&auto=format&fit=crop',
       videoUrl: 'https://www.youtube-nocookie.com/embed/5T8Lcfn6w8I',
@@ -73,7 +73,7 @@ export const TestimonialsPageContent: React.FC = () => {
       id: 8,
       name: 'SARAH & THOMAS',
       desc: 'Bespoke Floral Showcase',
-      quote: 'The floral installations were breathtaking works of art. Blanca has an unparalleled eye for color palettes and grand scale arrangements.',
+      quote: 'The floral installations were breathtaking works of art. Jessica has an unparalleled eye for color palettes and grand scale arrangements.',
       image: '/portfolio-images/floral.webp',
       avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop',
       videoUrl: 'https://www.youtube-nocookie.com/embed/S28X_KjT70Y',
@@ -432,7 +432,7 @@ export const TestimonialsPageContent: React.FC = () => {
                 <iframe
                   className="w-full h-full"
                   src={`${selectedVideo}?autoplay=1`}
-                  title="Blanca's Events Client Testimonial"
+                  title="Blanco's Events Client Testimonial"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

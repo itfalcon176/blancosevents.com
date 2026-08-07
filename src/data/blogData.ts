@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     image: '/portfolio-images/Elegant Table Settings.webp',
     date: 'August 3, 2026',
     category: 'DESIGN & STYLING',
-    author: 'Blanca',
+    author: 'Jessica',
     readTime: '4 min read',
   },
   {
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blancosevents-image-home/wedding.webp',
     date: 'July 28, 2026',
     category: 'WEDDING PLANNING',
-    author: 'Blanca',
+    author: 'Jessica',
     readTime: '6 min read',
   },
   {
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     image: '/portfolio-images/Corporate Events.webp',
     date: 'June 15, 2026',
     category: 'CORPORATE EVENTS',
-    author: 'Blanca',
+    author: 'Jessica',
     readTime: '5 min read',
   },
   {
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
     image: '/portfolio-images/hotel.webp',
     date: 'May 20, 2026',
     category: 'FLORAL DESIGN',
-    author: 'Blanca',
+    author: 'Jessica',
     readTime: '5 min read',
   },
   {
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     image: '/portfolio-images/birthday.webp',
     date: 'April 11, 2026',
     category: 'PRIVATE PARTIES',
-    author: 'Blanca',
+    author: 'Jessica',
     readTime: '4 min read',
   },
 ];

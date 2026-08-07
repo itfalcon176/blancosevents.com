@@ -164,7 +164,7 @@ export const ContactPageContent: React.FC = () => {
               EMAIL US
             </h3>
             <p className="text-sm font-semibold text-neutral-900 mb-1 tracking-wide">
-              <a href="mailto:hello@blancasevents.com" className="hover:text-[#C5A059] transition-colors">hello@blancasevents.com</a>
+              <a href="mailto:hello@blancosevents.com" className="hover:text-[#C5A059] transition-colors">hello@blancosevents.com</a>
             </p>
             <p className="text-[11px] text-neutral-500 font-light mt-1">
               We&apos;ll reply within 24 hours
@@ -400,7 +400,7 @@ export const ContactPageContent: React.FC = () => {
             <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#C5A059]/40 flex-shrink-0">
               <img
                 src="/blancosevents-image-home/home img2.webp"
-                alt="Blanca - Founder & Creative Director"
+                alt="Jessica - Founder & Creative Director"
                 className="w-full h-full object-cover object-top"
               />
             </div>

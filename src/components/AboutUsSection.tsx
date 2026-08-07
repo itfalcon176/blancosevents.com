@@ -119,7 +119,7 @@ export const AboutUsSection: React.FC = () => {
           >
             <Image
               src="/about-us-image/img3.webp"
-              alt="Blanca - Founder & Creative Director of Blanca's Events"
+              alt="Jessica - Founder & Creative Director of Blanco's Events"
               fill
               className="object-cover object-left transform transition-transform duration-700 hover:scale-105"
               sizes="(max-width: 768px) 100vw, 35vw"
@@ -172,11 +172,11 @@ export const AboutUsSection: React.FC = () => {
 
             <div className="space-y-4 sm:space-y-5 max-w-[471px]">
               <p className="text-xs sm:text-sm font-semibold text-black text-left">
-                The founder and creative director of Blanca's Events.
+                The founder and creative director of Blanco's Events.
               </p>
 
               <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed sm:leading-loose">
-                With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
+                With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanco's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
               </p>
 
               <p className="text-xs sm:text-sm font-medium text-black text-left leading-relaxed sm:leading-loose">
@@ -300,7 +300,7 @@ export const AboutUsSection: React.FC = () => {
               Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
             </h2>
             <p className="text-[9px] font-semibold tracking-[0.2em] text-[#4A4A4A] uppercase">
-              THE HEART BEHIND BLANCA'S EVENTS
+              THE HEART BEHIND BLANCO'S EVENTS
             </p>
           </div>
 
@@ -315,7 +315,7 @@ export const AboutUsSection: React.FC = () => {
             <div className="relative aspect-[4/5] w-full rounded-[32px] overflow-hidden shadow-xl border-4 border-[#FAF3EA]">
               <Image
                 src="/about-us-image/mob-about.webp"
-                alt="Blanca - Founder & Creative Director"
+                alt="Jessica - Founder & Creative Director"
                 fill
                 className="object-cover object-top"
                 sizes="100vw"
@@ -350,10 +350,10 @@ export const AboutUsSection: React.FC = () => {
               </h3>
               <div className="space-y-4 text-neutral-800 text-xs sm:text-sm leading-relaxed font-light">
                 <p className="font-semibold text-black">
-                  The founder and creative director of Blanca's Events.
+                  The founder and creative director of Blanco's Events.
                 </p>
                 <p>
-                  With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
+                  With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanco's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
                 </p>
                 <p>
                   Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
