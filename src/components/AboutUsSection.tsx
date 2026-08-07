@@ -167,7 +167,7 @@ export const AboutUsSection: React.FC = () => {
 
             {/* Everything below is left-aligned matching screenshot */}
             <h3 className="font-script text-4xl sm:text-5xl lg:text-5xl text-[#B88E3E] leading-snug text-left pt-2 font-normal">
-              Hi, I'm Blanca
+              Hi, I'm Jessica
             </h3>
 
             <div className="space-y-4 sm:space-y-5 max-w-[471px]">
@@ -190,7 +190,7 @@ export const AboutUsSection: React.FC = () => {
 
             <div className="pt-2 flex justify-start">
               <span className="font-script text-3xl sm:text-4xl text-[#B88E3E] flex items-center justify-start gap-1.5 font-normal">
-                Blanca <span className="text-[#B88E3E] text-2xl">♥</span>
+                Jessica <span className="text-[#B88E3E] text-2xl">♥</span>
               </span>
             </div>
           </motion.div>
@@ -346,7 +346,7 @@ export const AboutUsSection: React.FC = () => {
           >
             <div className="bg-[#FAF8F5] rounded-[24px] p-6 border border-[#B88E3E]/10 shadow-xs">
               <h3 className="font-script text-4xl text-[#B88E3E] mb-4">
-                Hi, I'm Blanca
+                Hi, I'm Jessica
               </h3>
               <div className="space-y-4 text-neutral-800 text-xs sm:text-sm leading-relaxed font-light">
                 <p className="font-semibold text-black">
@@ -364,7 +364,7 @@ export const AboutUsSection: React.FC = () => {
               </div>
               <div className="mt-6 pt-4 border-t border-[#B88E3E]/10 flex items-center justify-between">
                 <span className="font-script text-3xl text-[#B88E3E]">
-                  Blanca <span className="text-[#B88E3E] text-xl">♥</span>
+                  Jessica <span className="text-[#B88E3E] text-xl">♥</span>
                 </span>
                 <span className="text-[9px] tracking-wider text-neutral-400 uppercase font-semibold">
                   Creative Director

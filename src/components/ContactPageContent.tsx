@@ -412,7 +412,7 @@ export const ContactPageContent: React.FC = () => {
                 a <span className="text-[#C5A059] font-serif">conversation.</span>
               </blockquote>
               <cite className="text-[10px] tracking-widest text-neutral-400 not-italic uppercase font-semibold">
-                — Blanca 🤍
+                — Jessica 🤍
               </cite>
             </div>
           </div>
