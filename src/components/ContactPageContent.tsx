@@ -14,6 +14,16 @@ export const ContactPageContent: React.FC = () => {
     message: '',
   });
 
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const details = params.get('details');
+      if (details) {
+        setFormData((prev) => ({ ...prev, message: details }));
+      }
+    }
+  }, []);
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
