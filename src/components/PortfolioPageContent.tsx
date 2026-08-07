@@ -103,7 +103,7 @@ export const PortfolioPageContent: React.FC = () => {
   const handleEnquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!enquiryText.trim()) return;
-    window.location.href = `/contact?details=${encodeURIComponent(enquiryText.trim())}`;
+    window.location.href = `/contact?details=${encodeURIComponent(enquiryText.trim())}#enquiry-form`;
   };
 
   return (
