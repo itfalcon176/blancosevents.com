@@ -312,7 +312,7 @@ export const AboutUsSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="relative px-5 mb-8"
           >
-            <div className="relative aspect-[4/5] w-full max-w-[340px] mx-auto rounded-[32px] overflow-hidden shadow-xl border-4 border-[#FAF3EA]">
+            <div className="relative aspect-[4/5] w-full rounded-[32px] overflow-hidden shadow-xl border-4 border-[#FAF3EA]">
               <Image
                 src="/blanca-founder.png"
                 alt="Blanca - Founder & Creative Director"
