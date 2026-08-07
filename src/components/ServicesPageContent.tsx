@@ -147,7 +147,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
     { name: 'YACHTS', desc: 'Luxury yachts & boats for unforgettable celebrations', icon: Ship },
     { name: 'FIREWORKS', desc: 'Spectacular fireworks & special effects', icon: Sparkles },
     { name: 'ARTISTS', desc: 'Live painters, calligraphers & creative artists', icon: Palette },
-    { name: '& MORE', desc: 'Anything you can imagine, we can arrange.', icon: Ellipsis },
+    { name: 'MORE', desc: 'Anything you can imagine, we can arrange.', icon: Ellipsis },
   ];
 
   return (
@@ -214,7 +214,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
                 </div>
 
                 {/* Floating Circular Badge Icon - outside image container for proper z-index */}
-                <div className="absolute top-[212px] left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-[#08080A] border-[1.5px] border-[#C8A46A] flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300 z-50">
+                <div className="absolute top-[212px] left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-[#08080A] border-[1.5px] border-[#C8A46A] flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300 z-10">
                   <IconComponent className="w-7 h-7" />
                 </div>
 
@@ -273,8 +273,11 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
           <div className="lg:w-[72%] grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-[#E8DFC5] items-stretch text-center">
             {addOns.map((item, idx) => {
               const AddOnIcon = item.icon;
-              return (
-                <div key={idx} className="flex flex-col items-center justify-center px-2 py-4 space-y-2 text-center h-full">
+              const isMore = item.name === 'MORE';
+              const wrapperClass = `flex flex-col items-center justify-center px-2 py-4 space-y-2 text-center h-full transition-all duration-300 ${isMore ? 'hover:scale-105 cursor-pointer hover:bg-[#F3EAD9]/35' : ''}`;
+              
+              const content = (
+                <>
                   {/* Icon Badge */}
                   <div className="w-11 h-11 rounded-full bg-[#F3EAD9] flex items-center justify-center text-[#B89052] mb-1 flex-shrink-0">
                     <AddOnIcon className="w-[28px] h-[28px]" strokeWidth={1.5} />
@@ -282,7 +285,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
 
                   {/* Perfectly Level Aligned Title */}
                   <div className="h-7 flex items-center justify-center w-full">
-                    <h3 className="text-[11px] sm:text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase text-center leading-tight">
+                    <h3 className={`text-[11px] sm:text-xs font-bold tracking-[0.15em] uppercase text-center leading-tight ${isMore ? 'text-[#B88E3E]' : 'text-[#2C2C2C]'}`}>
                       {item.name}
                     </h3>
                   </div>
@@ -291,6 +294,24 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
                   <p className="text-[10.5px] text-[#666666] leading-snug font-medium max-w-[130px] text-center">
                     {item.desc}
                   </p>
+                </>
+              );
+
+              if (isMore) {
+                return (
+                  <Link
+                    href="/portfolio"
+                    key={idx}
+                    className={wrapperClass}
+                  >
+                    {content}
+                  </Link>
+                );
+              }
+
+              return (
+                <div key={idx} className={wrapperClass}>
+                  {content}
                 </div>
               );
             })}

@@ -13,6 +13,7 @@ import {
   Ellipsis,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export const WhyChooseUsSection: React.FC = () => {
   const emblems = [
@@ -98,21 +99,43 @@ export const WhyChooseUsSection: React.FC = () => {
           >
             {/* 8 Emblem Icons Row */}
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 text-center items-center">
-              {emblems.map((emblem) => (
-                <div
-                  key={emblem.id}
-                  className="flex flex-col items-center justify-center p-3 group hover:scale-110 transition-all duration-300 cursor-pointer"
-                >
-                  <div className="mb-2.5 h-12 w-12 rounded-full bg-[#F3EAD9]/60 border border-[#C5A059]/30 flex items-center justify-center group-hover:bg-[#C5A059] group-hover:text-black group-hover:border-[#C5A059] transition-all duration-300 shadow-sm">
-                    {React.cloneElement(emblem.icon, {
-                      className: 'w-6 h-6 text-[#C5A059] group-hover:text-black transition-colors',
-                    })}
+              {emblems.map((emblem) => {
+                const isMore = emblem.id === 'more';
+                const wrapperClass = "flex flex-col items-center justify-center p-3 group hover:scale-110 transition-all duration-300 cursor-pointer";
+                const content = (
+                  <>
+                    <div className="mb-2.5 h-12 w-12 rounded-full bg-[#F3EAD9]/60 border border-[#C5A059]/30 flex items-center justify-center group-hover:bg-[#C5A059] group-hover:text-black group-hover:border-[#C5A059] transition-all duration-300 shadow-sm">
+                      {React.cloneElement(emblem.icon, {
+                        className: 'w-6 h-6 text-[#C5A059] group-hover:text-black transition-colors',
+                      })}
+                    </div>
+                    <span className="text-[9.5px] font-semibold tracking-[0.2em] uppercase text-neutral-700 group-hover:text-[#C5A059] transition-colors">
+                      {emblem.name}
+                    </span>
+                  </>
+                );
+
+                if (isMore) {
+                  return (
+                    <Link
+                      href="/portfolio"
+                      key={emblem.id}
+                      className={wrapperClass}
+                    >
+                      {content}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div
+                    key={emblem.id}
+                    className={wrapperClass}
+                  >
+                    {content}
                   </div>
-                  <span className="text-[9.5px] font-semibold tracking-[0.2em] uppercase text-neutral-700 group-hover:text-[#C5A059] transition-colors">
-                    {emblem.name}
-                  </span>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Bottom Full-Width Light Gold Border Quote Box */}
