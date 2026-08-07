@@ -107,8 +107,8 @@ export const AboutUsSection: React.FC = () => {
       {/* TOP SECTION: Founder Story & Value Props             */}
       {/* ---------------------------------------------------- */}
       <div className="w-full pt-0 pb-0">
-        {/* 3-Column Main Content Layout */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-stretch w-full">
+        {/* Desktop Version */}
+        <div className="hidden lg:flex flex-row gap-6 lg:gap-8 xl:gap-10 items-stretch w-full">
           {/* Column 1: Founder Image (35% Width - Full Height Background Image) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -161,7 +161,7 @@ export const AboutUsSection: React.FC = () => {
               </h2>
 
               <p className="text-xs lg:text-[11px] font-semibold tracking-[0.25em] text-[#4A4A4A] uppercase text-center mt-3.5 sm:mt-4">
-                THE HEART BEHIND BLANCA'S EVENTS
+                THE HEART BEHIND BLANAS'S EVENTS
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Column 3: 4 Right Feature Cards (2 Columns on Mobile, Single Column on Desktop) */}
+          {/* Column 3: 4 Right Feature Cards */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -272,166 +272,467 @@ export const AboutUsSection: React.FC = () => {
             </div>
           </motion.div>
         </div>
-      </div>
 
-      {/* ---------------------------------------------------- */}
-      {/* MIDDLE SECTION: Why Clients Choose Us Banner         */}
-      {/* ---------------------------------------------------- */}
-      <div className="bg-[#FAF3EA] border-y border-[#E8DFC5]/60 py-8 px-4 sm:px-8 lg:px-12 xl:px-16 w-full">
-        <div className="w-full">
+        {/* Mobile Version (Premium, Sleek, and Magazine-Style) */}
+        <div className="block lg:hidden w-full pb-8">
           {/* Header */}
-          <div className="flex items-center justify-center gap-3 mb-6 text-center">
-            <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
-            <h3 className="text-xs font-bold tracking-[0.25em] text-[#B88E3E] uppercase">
-              WHY CLIENTS CHOOSE US
-            </h3>
-            <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
-          </div>
-
-          {/* 5 Cards Row with Dividers */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-0">
-            {/* Box 1 */}
-            <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
-                <ClipboardIcon className="w-5 h-5" />
-              </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
-                DETAIL ORIENTED
-              </h4>
-              <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
-                We take care of every detail so you can enjoy every moment.
-              </p>
+          <div className="text-center pt-8 px-4 mb-6">
+            <div className="flex items-center justify-center gap-3.5 mb-2">
+              <span className="h-[1px] w-12 bg-[#B88E3E]/70"></span>
+              <span className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[#B88E3E]">
+                ABOUT US
+              </span>
+              <span className="h-[1px] w-12 bg-[#B88E3E]/70"></span>
             </div>
 
-            {/* Box 2 */}
-            <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
-                <CalendarIcon className="w-5 h-5" />
-              </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
-                SEAMLESS PLANNING
-              </h4>
-              <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
-                Organised, efficient and always one step ahead.
-              </p>
+            {/* Flourish Ornament */}
+            <div className="flex justify-center mb-3">
+              <svg viewBox="0 0 200 12" fill="none" className="w-48 h-3">
+                <line x1="0" y1="6" x2="92" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
+                <circle cx="93.5" cy="6" r="1.2" fill="#B88E3E" />
+                <path d="M100 2L104 6L100 10L96 6Z" fill="#B88E3E" />
+                <circle cx="106.5" cy="6" r="1.2" fill="#B88E3E" />
+                <line x1="108" y1="6" x2="200" y2="6" stroke="#B88E3E" strokeWidth="1" strokeOpacity="0.75" />
+              </svg>
             </div>
 
-            {/* Box 3 */}
-            <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
-                <LightbulbIcon className="w-5 h-5" />
-              </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
-                CREATIVE EXCELLENCE
-              </h4>
-              <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
-                Original concepts and stunning designs that wow.
-              </p>
-            </div>
-
-            {/* Box 4 */}
-            <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
-              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
-                <HandshakeIcon className="w-5 h-5" />
-              </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
-                TRUSTED PARTNERS
-              </h4>
-              <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
-                A curated network of the very best in the industry.
-              </p>
-            </div>
-
-            {/* Box 5 */}
-            <div className="flex flex-col items-center text-center px-4">
-              <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
-                <StarIcon className="w-5 h-5" />
-              </div>
-              <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
-                MEMORABLE EXPERIENCES
-              </h4>
-              <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
-                We don't just plan events, we create memories.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ---------------------------------------------------- */}
-      {/* BOTTOM SECTION: Dark Mission Quote & Key Metrics     */}
-      {/* ---------------------------------------------------- */}
-      <div className="relative bg-[#09090B] text-white py-9 px-4 sm:px-8 lg:px-12 xl:px-16 overflow-hidden border-t border-[#D4AF37]/20 w-full">
-        {/* Subtle Dark Floral Watermark Background */}
-        <div
-          className="absolute inset-0 opacity-15 bg-cover bg-left pointer-events-none mix-blend-luminosity"
-          style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
-        />
-
-        <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-          {/* Left Column: Quote (4 cols) */}
-          <div className="lg:col-span-4 flex items-start space-x-3.5 pr-2">
-            <span className="font-serif text-5xl md:text-6xl text-[#C5A059] leading-none select-none -mt-1">
-              “
-            </span>
-            <p className="text-base md:text-xl font-serif text-neutral-100 font-light leading-relaxed">
-              My mission is to turn your vision into an experience that feels{' '}
-              <span className="text-[#D4AF37] font-serif not-italic">effortless</span> for you and{' '}
-              <span className="text-[#D4AF37] font-serif not-italic">unforgettable</span> for your guests.
+            <h2 className="text-2xl font-serif text-[#1C1C1C] tracking-tight mb-2 leading-tight">
+              Passion. Creativity. <span className="text-[#B88E3E]">Perfection.</span>
+            </h2>
+            <p className="text-[9px] font-semibold tracking-[0.2em] text-[#4A4A4A] uppercase">
+              THE HEART BEHIND BLANCA'S EVENTS
             </p>
           </div>
 
-          {/* Right Column: 4 Stat Boxes (8 cols) - 100% Equal Gaps for All Dividers */}
-          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-0 text-center items-stretch divide-y sm:divide-y-0 sm:divide-x divide-[#C5A059]/25 sm:border-l border-[#C5A059]/25">
-            {/* Stat 1 */}
-            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
-              <div className="flex justify-center text-[#C5A059] mb-1">
-                <LaurelWreathIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+          {/* Founder Portrait (Luxurious framed style) */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative px-5 mb-8"
+          >
+            <div className="relative aspect-[4/5] w-full max-w-[340px] mx-auto rounded-[32px] overflow-hidden shadow-xl border-4 border-[#FAF3EA]">
+              <Image
+                src="/blanca-founder.png"
+                alt="Blanca - Founder & Creative Director"
+                fill
+                className="object-cover object-top"
+                sizes="100vw"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            </div>
+          </motion.div>
+
+          {/* Founder Letter Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="px-5 mb-10"
+          >
+            <div className="bg-[#FAF8F5] rounded-[24px] p-6 border border-[#B88E3E]/10 shadow-xs">
+              <h3 className="font-script text-4xl text-[#B88E3E] mb-4">
+                Hi, I'm Blanca
+              </h3>
+              <div className="space-y-4 text-neutral-800 text-xs sm:text-sm leading-relaxed font-light">
+                <p className="font-semibold text-black">
+                  The founder and creative director of Blanca's Events.
+                </p>
+                <p>
+                  With a deep love for beautiful details and a natural talent for bringing visions to life, I established Blanca's Events to offer a truly bespoke experience for those who value elegance, originality and exceptional service.
+                </p>
+                <p>
+                  Every event we create is more than just a celebration – it's a reflection of your story, your style and the moments that matter most.
+                </p>
+                <p>
+                  From intimate gatherings to grand productions, my team and I are passionate about designing unforgettable events that leave a lasting impression on you and your guests.
+                </p>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
-                250+
+              <div className="mt-6 pt-4 border-t border-[#B88E3E]/10 flex items-center justify-between">
+                <span className="font-script text-3xl text-[#B88E3E]">
+                  Blanca <span className="text-[#B88E3E] text-xl">♥</span>
+                </span>
+                <span className="text-[9px] tracking-wider text-neutral-400 uppercase font-semibold">
+                  Creative Director
+                </span>
               </div>
-              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
-                EVENTS DELIVERED
+            </div>
+          </motion.div>
+
+          {/* Value Props Section */}
+          <div className="px-5">
+            <div className="grid grid-cols-1 gap-4">
+              {/* Bespoke by Design */}
+              <motion.div
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="bg-white border border-[#E5DFD5] rounded-xl p-4 flex items-start space-x-3.5 shadow-2xs"
+              >
+                <div className="text-[#B88E3E] p-2 bg-[#FAF8F5] rounded-lg flex-shrink-0">
+                  <DiamondIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold tracking-wider text-[#B88E3E] uppercase mb-1">
+                    BESPOKE BY DESIGN
+                  </h4>
+                  <p className="text-xs text-neutral-700 leading-normal">
+                    Every detail is thoughtfully curated to reflect your unique style.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Client-First Approach */}
+              <motion.div
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.05 }}
+                className="bg-white border border-[#E5DFD5] rounded-xl p-4 flex items-start space-x-3.5 shadow-2xs"
+              >
+                <div className="text-[#B88E3E] p-2 bg-[#FAF8F5] rounded-lg flex-shrink-0">
+                  <UsersIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold tracking-wider text-[#B88E3E] uppercase mb-1">
+                    CLIENT-FIRST APPROACH
+                  </h4>
+                  <p className="text-xs text-neutral-700 leading-normal">
+                    We listen, guide and support you at every step of the journey.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Exceptional Quality */}
+              <motion.div
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="bg-white border border-[#E5DFD5] rounded-xl p-4 flex items-start space-x-3.5 shadow-2xs"
+              >
+                <div className="text-[#B88E3E] p-2 bg-[#FAF8F5] rounded-lg flex-shrink-0">
+                  <QualityAwardIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold tracking-wider text-[#B88E3E] uppercase mb-1">
+                    EXCEPTIONAL QUALITY
+                  </h4>
+                  <p className="text-xs text-neutral-700 leading-normal">
+                    We work with the finest partners and never compromise on quality.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Passionate Team */}
+              <motion.div
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.15 }}
+                className="bg-white border border-[#E5DFD5] rounded-xl p-4 flex items-start space-x-3.5 shadow-2xs"
+              >
+                <div className="text-[#B88E3E] p-2 bg-[#FAF8F5] rounded-lg flex-shrink-0">
+                  <HeartIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold tracking-wider text-[#B88E3E] uppercase mb-1">
+                    PASSIONATE TEAM
+                  </h4>
+                  <p className="text-xs text-neutral-700 leading-normal">
+                    A dedicated team that treats your event as if it were our own.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------------------------------------------------- */}
+        {/* MIDDLE SECTION: Why Clients Choose Us Banner         */}
+        {/* ---------------------------------------------------- */}
+        <div className="bg-[#FAF3EA] border-y border-[#E8DFC5]/60 py-8 px-4 sm:px-8 lg:px-12 xl:px-16 w-full">
+          <div className="w-full">
+            {/* Header */}
+            <div className="flex items-center justify-center gap-3 mb-6 text-center">
+              <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
+              <h3 className="text-xs font-bold tracking-[0.25em] text-[#B88E3E] uppercase">
+                WHY CLIENTS CHOOSE US
+              </h3>
+              <span className="h-[1px] w-12 bg-[#B88E3E]/40"></span>
+            </div>
+
+            {/* Desktop Version: 5 Columns Grid */}
+            <div className="hidden lg:grid grid-cols-5 gap-0">
+              {/* Box 1 */}
+              <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
+                <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                  <ClipboardIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  DETAIL ORIENTED
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
+                  We take care of every detail so you can enjoy every moment.
+                </p>
+              </div>
+
+              {/* Box 2 */}
+              <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
+                <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                  <CalendarIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  SEAMLESS PLANNING
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
+                  Organised, efficient and always one step ahead.
+                </p>
+              </div>
+
+              {/* Box 3 */}
+              <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
+                <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                  <LightbulbIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  CREATIVE EXCELLENCE
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
+                  Original concepts and stunning designs that wow.
+                </p>
+              </div>
+
+              {/* Box 4 */}
+              <div className="flex flex-col items-center text-center px-4 lg:border-r lg:border-[#E2D8C6]">
+                <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                  <HandshakeIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  TRUSTED PARTNERS
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
+                  A curated network of the very best in the industry.
+                </p>
+              </div>
+
+              {/* Box 5 */}
+              <div className="flex flex-col items-center text-center px-4">
+                <div className="text-[#B88E3E] mb-2 p-2 bg-[#F3EAD9] rounded-full">
+                  <StarIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  MEMORABLE EXPERIENCES
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed max-w-[200px]">
+                  We don't just plan events, we create memories.
+                </p>
               </div>
             </div>
 
-            {/* Stat 2 */}
-            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
-              <div className="flex justify-center text-[#C5A059] mb-1">
-                <UsersIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+            {/* Mobile Version: Horizontal Swipeable Carousel (extremely premium!) */}
+            <div className="flex lg:hidden overflow-x-auto gap-4 pb-4 px-2 scrollbar-hide snap-x snap-mandatory">
+              {/* Box 1 */}
+              <div className="flex flex-col items-center text-center p-5 bg-white border border-[#E8DFC5]/40 rounded-2xl w-[240px] flex-shrink-0 snap-center shadow-xs">
+                <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
+                  <ClipboardIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  DETAIL ORIENTED
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed">
+                  We take care of every detail so you can enjoy every moment.
+                </p>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
-                20,000+
+
+              {/* Box 2 */}
+              <div className="flex flex-col items-center text-center p-5 bg-white border border-[#E8DFC5]/40 rounded-2xl w-[240px] flex-shrink-0 snap-center shadow-xs">
+                <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
+                  <CalendarIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  SEAMLESS PLANNING
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed">
+                  Organised, efficient and always one step ahead.
+                </p>
               </div>
-              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
-                HAPPY GUESTS
+
+              {/* Box 3 */}
+              <div className="flex flex-col items-center text-center p-5 bg-white border border-[#E8DFC5]/40 rounded-2xl w-[240px] flex-shrink-0 snap-center shadow-xs">
+                <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
+                  <LightbulbIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  CREATIVE EXCELLENCE
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed">
+                  Original concepts and stunning designs that wow.
+                </p>
+              </div>
+
+              {/* Box 4 */}
+              <div className="flex flex-col items-center text-center p-5 bg-white border border-[#E8DFC5]/40 rounded-2xl w-[240px] flex-shrink-0 snap-center shadow-xs">
+                <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
+                  <HandshakeIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  TRUSTED PARTNERS
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed">
+                  A curated network of the very best in the industry.
+                </p>
+              </div>
+
+              {/* Box 5 */}
+              <div className="flex flex-col items-center text-center p-5 bg-white border border-[#E8DFC5]/40 rounded-2xl w-[240px] flex-shrink-0 snap-center shadow-xs">
+                <div className="text-[#B88E3E] mb-3 p-2 bg-[#F3EAD9] rounded-full">
+                  <StarIcon className="w-5 h-5" />
+                </div>
+                <h4 className="text-xs font-bold tracking-[0.15em] text-[#2C2C2C] uppercase mb-1">
+                  MEMORABLE EXPERIENCES
+                </h4>
+                <p className="text-xs text-[#666666] leading-relaxed">
+                  We don't just plan events, we create memories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------------------------------------------------- */}
+        {/* BOTTOM SECTION: Dark Mission Quote & Key Metrics     */}
+        {/* ---------------------------------------------------- */}
+        <div className="relative bg-[#09090B] text-white py-9 px-4 sm:px-8 lg:px-12 xl:px-16 overflow-hidden border-t border-[#D4AF37]/20 w-full">
+          {/* Subtle Dark Floral Watermark Background */}
+          <div
+            className="absolute inset-0 opacity-15 bg-cover bg-left pointer-events-none mix-blend-luminosity"
+            style={{ backgroundImage: "url('/dark-rose-bg.png')" }}
+          />
+
+          <div className="relative w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            {/* Left Column: Quote (4 cols) */}
+            <div className="lg:col-span-4 flex items-start space-x-3.5 pr-2">
+              <span className="font-serif text-5xl md:text-6xl text-[#C5A059] leading-none select-none -mt-1">
+                “
+              </span>
+              <p className="text-base md:text-xl font-serif text-neutral-100 font-light leading-relaxed">
+                My mission is to turn your vision into an experience that feels{' '}
+                <span className="text-[#D4AF37] font-serif not-italic">effortless</span> for you and{' '}
+                <span className="text-[#D4AF37] font-serif not-italic">unforgettable</span> for your guests.
+              </p>
+            </div>
+
+            {/* Desktop Version: 4 Stat Boxes in a row */}
+            <div className="hidden lg:grid lg:col-span-8 grid-cols-4 gap-0 text-center items-stretch divide-x divide-[#C5A059]/25 border-l border-[#C5A059]/25">
+              {/* Stat 1 */}
+              <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+                <div className="flex justify-center text-[#C5A059] mb-1">
+                  <LaurelWreathIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
+                  250+
+                </div>
+                <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
+                  EVENTS DELIVERED
+                </div>
+              </div>
+
+              {/* Stat 2 */}
+              <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+                <div className="flex justify-center text-[#C5A059] mb-1">
+                  <UsersIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
+                  20,000+
+                </div>
+                <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
+                  HAPPY GUESTS
+                </div>
+              </div>
+
+              {/* Stat 3 */}
+              <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+                <div className="flex justify-center text-[#C5A059] mb-1">
+                  <GlobeIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
+                  UAE & BEYOND
+                </div>
+                <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
+                  GLOBAL REACH
+                </div>
+              </div>
+
+              {/* Stat 4 */}
+              <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
+                <div className="flex justify-center text-[#C5A059] mb-1">
+                  <DiamondIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                </div>
+                <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
+                  10+ YEARS
+                </div>
+                <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
+                  OF EXPERIENCE
+                </div>
               </div>
             </div>
 
-            {/* Stat 3 */}
-            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
-              <div className="flex justify-center text-[#C5A059] mb-1">
-                <GlobeIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+            {/* Mobile Version: 2x2 Glassmorphic Cards Grid */}
+            <div className="grid lg:hidden grid-cols-2 gap-4 mt-6 w-full">
+              {/* Stat 1 */}
+              <div className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">
+                <div className="text-[#C5A059] mb-1.5 flex justify-center">
+                  <LaurelWreathIcon className="w-6 h-6" />
+                </div>
+                <div className="text-lg font-serif text-white font-normal tracking-wide">
+                  250+
+                </div>
+                <div className="text-[8px] font-semibold tracking-widest text-[#C5A059] uppercase text-center mt-1">
+                  EVENTS DELIVERED
+                </div>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
-                UAE & BEYOND
-              </div>
-              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
-                GLOBAL REACH
-              </div>
-            </div>
 
-            {/* Stat 4 */}
-            <div className="flex flex-col items-center justify-center space-y-1.5 px-3 lg:px-4 py-2">
-              <div className="flex justify-center text-[#C5A059] mb-1">
-                <DiamondIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+              {/* Stat 2 */}
+              <div className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">
+                <div className="text-[#C5A059] mb-1.5 flex justify-center">
+                  <UsersIcon className="w-6 h-6" />
+                </div>
+                <div className="text-lg font-serif text-white font-normal tracking-wide">
+                  20,000+
+                </div>
+                <div className="text-[8px] font-semibold tracking-widest text-[#C5A059] uppercase text-center mt-1">
+                  HAPPY GUESTS
+                </div>
               </div>
-              <div className="text-base sm:text-lg md:text-xl lg:text-[22px] font-serif text-white font-normal tracking-wide whitespace-nowrap">
-                10+ YEARS
+
+              {/* Stat 3 */}
+              <div className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">
+                <div className="text-[#C5A059] mb-1.5 flex justify-center">
+                  <GlobeIcon className="w-6 h-6" />
+                </div>
+                <div className="text-lg font-serif text-white font-normal tracking-wide">
+                  UAE & BEYOND
+                </div>
+                <div className="text-[8px] font-semibold tracking-widest text-[#C5A059] uppercase text-center mt-1">
+                  GLOBAL REACH
+                </div>
               </div>
-              <div className="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] text-[#C5A059] uppercase whitespace-nowrap">
-                OF EXPERIENCE
+
+              {/* Stat 4 */}
+              <div className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs">
+                <div className="text-[#C5A059] mb-1.5 flex justify-center">
+                  <DiamondIcon className="w-6 h-6" />
+                </div>
+                <div className="text-lg font-serif text-white font-normal tracking-wide">
+                  10+ YEARS
+                </div>
+                <div className="text-[8px] font-semibold tracking-widest text-[#C5A059] uppercase text-center mt-1">
+                  OF EXPERIENCE
+                </div>
               </div>
             </div>
           </div>
