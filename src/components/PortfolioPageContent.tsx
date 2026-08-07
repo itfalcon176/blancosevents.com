@@ -224,7 +224,7 @@ export const PortfolioPageContent: React.FC = () => {
           </AnimatePresence>
 
           {/* ── View Full Portfolio CTA ── */}
-          <div className="flex justify-center mt-12 sm:mt-14">
+          {/* <div className="flex justify-center mt-12 sm:mt-14">
             <a
               href="/contact"
               className="group inline-flex items-center px-7 py-3 border border-neutral-400 text-neutral-700 hover:border-[#C5A059] hover:text-[#C5A059] transition-all duration-300 text-[11px] font-semibold tracking-[0.2em] uppercase rounded-sm"
@@ -232,7 +232,7 @@ export const PortfolioPageContent: React.FC = () => {
               <span>VIEW FULL PORTFOLIO</span>
               <ArrowRight className="w-4 h-4 ml-2.5 transition-transform group-hover:translate-x-1" />
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 
