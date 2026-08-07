@@ -154,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
 
             {/* PLAN AN EVENT Button */}
             <button
-              onClick={onOpenInquiry}
+              onClick={() => { window.location.href = '/contact'; }}
               className="px-4 py-2.5 border border-[#C5A059] bg-black text-[#C5A059] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 text-[10.5px] font-bold tracking-[0.18em] uppercase rounded-sm flex items-center justify-between shadow-lg w-full max-w-[210px]"
             >
               <span>PLAN AN EVENT</span>
