@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 
 export default function TestimonialsPage() {
   const handleOpenInquiry = () => {
-    window.location.href = '/#contact';
+    window.location.href = '/contact';
   };
 
   return (

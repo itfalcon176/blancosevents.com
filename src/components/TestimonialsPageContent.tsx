@@ -389,7 +389,7 @@ export const TestimonialsPageContent: React.FC = () => {
           {/* Right Action Button */}
           <div className="flex-shrink-0 w-full md:w-auto flex justify-end">
             <button
-              onClick={() => { window.location.href = '/#contact'; }}
+              onClick={() => { window.location.href = '/contact'; }}
               className="w-full md:w-auto bg-[#C5A059] hover:bg-[#D4AF37] text-black px-8 py-4 text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 flex items-center justify-center gap-2.5 shadow-lg whitespace-nowrap"
             >
               <span>PLAN MY EVENT</span>

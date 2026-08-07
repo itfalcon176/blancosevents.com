@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 
 export default function AboutPage() {
   const handleOpenInquiry = () => {
-    window.location.href = '/#contact';
+    window.location.href = '/contact';
   };
 
   return (
