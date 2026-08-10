@@ -220,7 +220,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
 
                 {/* Card Text Content */}
                 <div className="pt-10 pb-7 px-5 flex flex-col items-center text-center flex-grow bg-[#08080A] rounded-b-sm">
-                  <h2 className="text-xs sm:text-[13px] font-bold tracking-[0.18em] text-[#C5A059] uppercase mb-3 leading-snug">
+                  <h2 className="text-xs sm:text-[13px] font-bold tracking-[0.18em] text-[#C5A059] uppercase mb-3 leading-snug min-h-[34px] flex items-center justify-center">
                     {service.title}
                   </h2>
 
@@ -231,7 +231,7 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
                   {/* Explore Button / Link */}
                   <Link
                     href={service.href}
-                    className="inline-flex items-center text-[10.5px] font-bold tracking-[0.2em] text-[#C5A059] hover:text-[#F3E5AB] transition-colors uppercase group/link"
+                    className="inline-flex items-center text-[10.5px] font-bold tracking-[0.2em] text-[#C5A059] hover:text-[#F3E5AB] transition-colors uppercase group/link mt-auto"
                   >
                     <span>{service.buttonText}</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-1.5 transform group-hover/link:translate-x-1 transition-transform" />
@@ -274,26 +274,28 @@ export const ServicesPageContent: React.FC<ServicesPageContentProps> = ({ onOpen
             {addOns.map((item, idx) => {
               const AddOnIcon = item.icon;
               const isMore = item.name === 'MORE';
-              const wrapperClass = `flex flex-col items-center justify-center px-2 py-4 space-y-2 text-center h-full transition-all duration-300 ${isMore ? 'hover:scale-105 cursor-pointer hover:bg-[#F3EAD9]/35' : ''}`;
+              const wrapperClass = `flex flex-col items-center justify-start px-2 py-4 text-center h-full transition-all duration-300 ${isMore ? 'hover:scale-105 cursor-pointer hover:bg-[#F3EAD9]/35' : ''}`;
               
               const content = (
                 <>
-                  {/* Icon Badge */}
-                  <div className="w-11 h-11 rounded-full bg-[#F3EAD9] flex items-center justify-center text-[#B89052] mb-1 flex-shrink-0">
-                    <AddOnIcon className="w-[28px] h-[28px]" strokeWidth={1.5} />
+                  {/* Icon Badge - Fixed position and size */}
+                  <div className="w-12 h-12 rounded-full bg-[#F3EAD9] flex items-center justify-center text-[#B89052] mb-3 flex-shrink-0">
+                    <AddOnIcon className="w-6 h-6" strokeWidth={1.5} />
                   </div>
 
                   {/* Perfectly Level Aligned Title */}
-                  <div className="h-7 flex items-center justify-center w-full">
+                  <div className="h-6 flex items-center justify-center w-full mb-2">
                     <h3 className={`text-[11px] sm:text-xs font-bold tracking-[0.15em] uppercase text-center leading-tight ${isMore ? 'text-[#B88E3E]' : 'text-[#2C2C2C]'}`}>
                       {item.name}
                     </h3>
                   </div>
 
-                  {/* Subtitle Paragraph */}
-                  <p className="text-[10.5px] text-[#666666] leading-snug font-medium max-w-[130px] text-center">
-                    {item.desc}
-                  </p>
+                  {/* Subtitle Paragraph - Aligned baseline */}
+                  <div className="w-full flex justify-center">
+                    <p className="text-[10.5px] text-[#666666] leading-snug font-medium max-w-[130px] text-center">
+                      {item.desc}
+                    </p>
+                  </div>
                 </>
               );
 
