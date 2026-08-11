@@ -33,11 +33,11 @@ export const BrandsBanner: React.FC = () => {
           <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
           <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
 
-          <div className="animate-marquee space-x-12 sm:space-x-20 items-center py-2">
+          <div className="animate-marquee items-center py-2">
             {[...brands, ...brands].map((brand, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 flex items-center justify-center w-36 sm:w-52 hover:scale-105 transition-transform duration-300 cursor-pointer"
+                className="flex-shrink-0 flex items-center justify-center w-36 sm:w-52 px-6 sm:px-10 hover:scale-105 transition-transform duration-300 cursor-pointer"
               >
                 <img
                   src={brand.logo}
