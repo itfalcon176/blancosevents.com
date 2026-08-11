@@ -177,7 +177,7 @@ export const ContactPageContent: React.FC = () => {
               <MapPin className="w-5 h-5 stroke-[1.2]" />
             </div>
             <h3 className="text-[10px] font-bold tracking-[0.25em] uppercase text-[#C5A059] mb-2.5">
-              VISIT US
+              CONTACT US
             </h3>
             <p className="text-xs text-neutral-700 leading-relaxed font-normal max-w-[260px]">
               Office 503, The Onyx Tower 2 <br />
