@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Play, ChevronLeft, ChevronRight, MessageCircle, ArrowRight, Users, MapPin, Gem, Award, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BrandsBanner } from '@/components/BrandsBanner';
 
 export const TestimonialsPageContent: React.FC = () => {
   const testimonials = [
@@ -80,18 +81,6 @@ export const TestimonialsPageContent: React.FC = () => {
     },
   ];
 
-  const brands = [
-    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/atlantis.webp' },
-    { name: 'FIVE', logo: '/blancosevents-image-home/icons/five.webp' },
-    { name: 'BLU', logo: '/blancosevents-image-home/icons/blu.webp' },
-    { name: 'TROVE', logo: '/blancosevents-image-home/icons/trove.webp' },
-    { name: 'GOOSE ISLAND', logo: '/blancosevents-image-home/icons/goose.webp' },
-    { name: 'THE BANC', logo: '/blancosevents-image-home/icons/banc.webp' },
-    { name: 'WAVEHOUSE', logo: '/blancosevents-image-home/icons/wavehouse.webp' },
-    { name: 'EN FUEGO', logo: '/blancosevents-image-home/icons/en fluego.webp' },
-    { name: 'AYLA', logo: '/blancosevents-image-home/icons/ayla.webp' },
-    { name: 'OCCO', logo: '/blancosevents-image-home/icons/occo.webp' },
-  ];
 
   const stats = [
     {
@@ -284,40 +273,7 @@ export const TestimonialsPageContent: React.FC = () => {
       {/* ---------------------------------------------------- */}
       {/* SECTION 3: Trusted Brands Banner                     */}
       {/* ---------------------------------------------------- */}
-      <section className="py-6 bg-white border-y border-[#E8DFC5]/50 overflow-hidden">
-        <div className="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Title with Lines */}
-          <div className="flex items-center justify-center gap-3.5 mb-4 w-full">
-            <span className="h-[1px] w-14 sm:w-20 bg-[#B88E3E]/50"></span>
-            <span className="text-[10px] sm:text-xs font-bold tracking-[0.25em] text-[#B88E3E] uppercase whitespace-nowrap">
-              TRUSTED BY LEADING BRANDS & VENUES
-            </span>
-            <span className="h-[1px] w-14 sm:w-20 bg-[#B88E3E]/50"></span>
-          </div>
-
-          {/* Brand Logos Infinite Scroll Marquee (Desktop & Mobile) */}
-          <div className="relative w-full overflow-hidden py-1">
-            {/* Edge fade gradient overlays */}
-            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
-
-            <div className="animate-marquee space-x-12 sm:space-x-20 items-center py-2">
-              {[...brands, ...brands].map((brand, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 flex items-center justify-center w-36 sm:w-52 hover:scale-105 transition-transform duration-300 cursor-pointer"
-                >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="h-14 sm:h-20 max-h-20 object-contain filter brightness-95"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <BrandsBanner />
 
       {/* ---------------------------------------------------- */}
       {/* SECTION 4: Key Stats Bar                             */}
