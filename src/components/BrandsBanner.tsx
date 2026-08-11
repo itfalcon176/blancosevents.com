@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export const BrandsBanner: React.FC = () => {
   const brands = [
-    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/atlantis.webp' },
+    { name: 'ATLANTIS', logo: '/blancosevents-image-home/icons/atlantis-the-palm.webp' },
     { name: 'FIVE', logo: '/blancosevents-image-home/icons/five.webp' },
     { name: 'BLU', logo: '/blancosevents-image-home/icons/blu.webp' },
     { name: 'TROVE', logo: '/blancosevents-image-home/icons/trove.webp' },
